@@ -226,6 +226,7 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
         $coursenamelink = html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)),
                                             $coursename, array('class' => $course->visible ? '' : 'dimmed'));
         $content .= html_writer::tag($nametag, $coursenamelink, array('class' => 'coursename'));
+        
         // If we display course in collapsed form but the course has summary or course contacts, display the link to the info page.
         $content .= html_writer::start_tag('div', array('class' => 'moreinfo'));
         if ($chelper->get_show_courses() < self::COURSECAT_SHOW_COURSES_EXPANDED) {
@@ -233,7 +234,7 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
                 $url = new moodle_url('/course/info.php', array('id' => $course->id));
                 $image = html_writer::empty_tag('img', array('src' => $this->output->pix_url('i/info'),
                     'alt' => $this->strings->summary));
-                $content .= html_writer::link($url, $image, array('title' => $this->strings->summary));
+                 $content .= html_writer::link($url, $image, array('title' => $this->strings->summary));
                 // Make sure JS file to expand course content is included.
                 $this->coursecat_include_js();
             }
@@ -269,6 +270,19 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
             $course = new course_in_list($course);
         }
         $content = '';
+        
+        //* display course summary
+        if ($course->has_summary()) {
+            $summurytext = $course->summary;
+            
+            if (strlen($summurytext) >= 400) {
+                $content .= html_writer::tag('div', substr($summurytext, 0, 300).'...', array('class'=>'summary-box'));
+            } else {
+                $content .= html_writer::tag('div', $summurytext, array('class'=>'summary-box'));
+            }
+            
+        }
+        
         // Display course overview files.
         $contentimages = $contentfiles = '';
         foreach ($course->get_course_overviewfiles() as $file) {
@@ -276,6 +290,8 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
             $url = file_encode_url("$CFG->wwwroot/pluginfile.php",
                     '/'. $file->get_contextid(). '/'. $file->get_component(). '/'.
                     $file->get_filearea(). $file->get_filepath(). $file->get_filename(), !$isimage);
+            $imageurl =html_writer::start_tag('div', array('class' => 'summary-box')).html_writer::empty_tag('img', array('src' => $url)).html_writer::end_tag('div');
+                $imagelink = html_writer::link(new moodle_url('/course/view.php', array('id' => $course->id)), $imageurl);
             if ($isimage) {
                     $contentimages .= html_writer::start_tag('div', array('class' => 'imagebox suman'));
 
@@ -299,7 +315,7 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
         
         // Display course summary.
         if ($course->has_summary()) {
-            $content .= $chelper->get_course_formatted_summary($course);
+           // $content .= $chelper->get_course_formatted_summary($course);
         }
         // Display course contacts. See course_in_list::get_course_contacts().
         if ($course->has_course_contacts()) {
