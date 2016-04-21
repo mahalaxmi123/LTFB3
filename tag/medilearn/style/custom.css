@@ -1,0 +1,188 @@
+/* Custom CSS
+-------------------------*/
+body#page-site-index {
+    margin-top: 0px;
+}
+body{margin: 0; padding: 0;}
+
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin-top: 20px;
+    padding: 0;
+    width: 50%;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+/* Header Start */
+#header-wrapper { width: 100%; height: 98px; }
+
+#top-header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    opacity: 1;
+    z-index: 33;
+    box-shadow: 0px 0px 8px 0px #6B6565;
+    background-color: #322E2E;
+    border: 1px solid #C1BABA;
+}
+
+.usermenu .moodle-actionmenu .toggle-display { color:#fff;}
+.usermenu .moodle-actionmenu .toggle-display:hover { color: green;}
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret {color:#fff; border-top-color: #fff;}
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover { color:green; border-top-color: green; }
+
+#page-header {clear: both; position: relative; max-height: 125px;}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner { box-shadow: none; }
+.navbar .brand { font-size: 15px; }
+.navbar .brand a { color: #6c9;}
+.navbar .nav>li { font-size: 14px; }
+.navbar .nav.pull-right { margin: 34px; }
+#header-in { padding: 12px 0;}
+ 
+  /* Header end*/
+  
+  /*block start*/
+  
+ .block {
+    min-height: 20px;
+    padding: 19px;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-color: #e3e3e3;
+    /*-webkit-border-radius: 4px;
+    /*-moz-border-radius: 4px;
+    /*border-radius: none;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); */
+    /*-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); */
+}
+
+.block .header h2 {
+    display: block;
+    padding: 3px 15px;
+    margin: 0;
+    font-size: 11px;
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    line-height: 20px;
+    /* text-shadow: 0 1px 0 rgba(255,255,255,0.5); */
+    text-transform: none;
+    word-wrap: break-word;
+    color: #D1EBB1;
+    text-shadow: none;
+    
+}
+      /*block end*/
+      
+  /*slider start*/
+  #slider-wrapper { width: 100%; display: block;}
+   #slider-wrapper .slideimg {  border-top: 2px solid #8cc1c1;}
+  #slider-wrapper .slideimg img { 
+    width: 100%; 
+    height: 100%; 
+    margin-top: -9px;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+   
+}
+  
+  /*slider end*/
+  
+  
+  #text {height:100px;}
+/*
+  .navbar-inner { border: none; background-color:#fff;
+    background-image: -moz-linear-gradient(top, #fff;, #fff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff;), to(#fff;));
+    background-image: -webkit-linear-gradient(top, #fff, #fff);
+    background-image: -o-linear-gradient(top, #fff, #fff);
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1f438f', endColorstr='#ff1f438f', GradientType=0); }
+*/
+
+#main-contentbox{margin-top: 20px;}
+  /*courses start*/
+ /* h2 {color: #dbecda; background-color: #5BA276;}
+#frontpage-course-list , #frontpage-course-list .courses { width: 100%;}
+.coursebox {padding: 0px; width: 43%; float: left; margin: 6px; }
+.coursebox .content .summary , .coursebox .content .courseimage { width: 100%; }
+.coursebox .content .summary { margin: 4px 0px; }
+ .coursebox .content .courseimage {margin: 0px 0px 10px 0px; }
+.coursebox .content .courseimage img { width:100%; min-width: 200px; max-width: 276px;  min-height: 180px;}
+.courses .coursebox:hover , .courses .coursebox.even{ background-color: #fff;}
+.courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+.used-region-side-pre .courses .course-box { min-height: 390px; }
+.coursebox .content .summary p { padding: 0px 7px; text-align: center; font-size: 14px; }
+
+/*courses  End */
+ 
+ /*courses start*/
+ #frontpage-course-list h2 { background-color: #fff; box-shadow: none; color: #557963; font-size: 24px; }
+ a{ color: #0C76B2;}
+ .courses .coursebox { padding:0px; box-shadow: 0 1px 1px rgba(0,0,0,0.2); -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2); border:none;}
+ #frontpage-course-list , #frontpage-course-list .courses { width: 100%;}
+ .courses .coursebox:hover , .courses .coursebox.even{ background-color: #fff;}
+ .coursebox .content .courseimage img { width:100%; min-width: 200px; max-width: 276px;  min-height: 180px;}
+ h2 {color: #D1EBB1; background-color: #5BA276; box-shadow: 1px 4px 6px 0px #928E8E;}
+ .coursebox  h3 { width :100%; margin-bottom: 16px; }
+ 
+ .coursebox>.info>h3.coursename{ margin: 0px; margin-bottom: 10px; }
+ .coursebox>.info>.coursename a {display: block;
+    /* padding-left: 21px; */
+    background-image: none;
+    background-position: left .2em;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: 19px;
+    border: 3px solid #F0F3F0;
+    color: #6E6E6F;
+    
+} 
+ 
+ /*courses  End */
+ 
+
+  /* Custom CSS Settings
+-------------------------*/
+
+.coursebox .content .courseimage { width:50%;} 
+  
+@media only screen and (min-width:300px) and (max-width:959px) {
+	
+ .coursebox .content .courseimage{
+		width : 100%;
+		
+	}
+	
+	.coursebox .content p {
+		clear:both;
+	}
+}
+
+[[setting:customcss]]

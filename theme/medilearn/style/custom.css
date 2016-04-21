@@ -1,0 +1,277 @@
+/* Custom CSS
+-------------------------*/
+body#page-site-index {
+    margin-top: 0px;
+}
+body{margin: 0; padding: 0;}
+
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 75px;
+    margin-top: 20px;
+    padding: 0;
+    width: 230px;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+/* Header Start */
+#header-wrapper { width: 100%; height: 98px; }
+
+#top-header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    opacity: 1;
+    z-index: 33;
+    box-shadow: 0px 0px 8px 0px #6B6565;
+    background-color: #4E4444;
+    border: 1px solid #C1BABA;
+}
+
+.usermenu .moodle-actionmenu .toggle-display , .usermenu .login , .usermenu .login a { color:#fff;}
+.usermenu .login:hover , .usermenu .login a:hover , .usermenu .moodle-actionmenu .toggle-display:hover,
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover { color: #8cc1c1; }
+//.usermenu .moodle-actionmenu .toggle-display:hover { color: green;}
+.jsenabled .usermenu .moodle-actionmenu.show { background-color: #4E4444;}
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret {color:#fff; border-top-color: #fff;}
+//.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover { color:green; border-top-color: green; }
+
+#page-header {clear: both; position: relative; max-height: 125px;  margin:40px 0px 10px 0px;}
+.nav-collapse.collapse { float: right; margin-top: 24px;}
+.navigation { float: right; }
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner { box-shadow: none; }
+.navbar .brand { font-size: 16px; background-color: #8cc1c1; text-shadow: none; border-radius: 8px; color: #fff; margin-top: 26px;
+padding: 8px 17px 8px;}
+.navbar .brand a { color: #6c9;}
+.navbar .brand:hover { color: #fff;}
+.navbar .nav>li { font-size: 14px; }
+.navbar .nav.pull-right { margin: 34px; }
+#header-in { padding: 12px 0;}
+ 
+  /* Header end*/
+  
+  /*block start*/
+  
+ .block {
+    min-height: 20px;
+    padding: 19px;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-color: #e3e3e3;
+    /*-webkit-border-radius: 4px;
+    /*-moz-border-radius: 4px;
+    /*border-radius: none;
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); */
+    /*-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    /* box-shadow: inset 0 1px 1px rgba(0,0,0,0.05); */
+}
+
+.block .header h2 {
+    display: block;
+    padding: 8px 15px;
+    margin: 0;
+    font-size: 11px;
+    font-size: 1.1em;
+    /* font-weight: bold; */
+    line-height: 20px;
+    /* text-shadow: 0 1px 0 rgba(255,255,255,0.5); */
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #fff;
+    text-shadow: none;
+    
+}
+      /*block end*/
+      
+  /*slider start*/
+  #slider-wrapper { width: 100%; display: block;}
+   #slider-wrapper .slideimg {  border-top: 2px solid #8cc1c1;}
+  #slider-wrapper .slideimg img { 
+    width: 100%; 
+    height: 100%; 
+
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+   
+}
+  
+  /*slider end*/
+  
+  
+  #text {height:100px;}
+/*
+  .navbar-inner { border: none; background-color:#fff;
+    background-image: -moz-linear-gradient(top, #fff;, #fff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff;), to(#fff;));
+    background-image: -webkit-linear-gradient(top, #fff, #fff);
+    background-image: -o-linear-gradient(top, #fff, #fff);
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1f438f', endColorstr='#ff1f438f', GradientType=0); }
+*/
+
+#main-contentbox{margin-top: 20px;}
+  /*courses start*/
+ /* h2 {color: #dbecda; background-color: #5BA276;}
+#frontpage-course-list , #frontpage-course-list .courses { width: 100%;}
+.coursebox {padding: 0px; width: 43%; float: left; margin: 6px; }
+.coursebox .content .summary , .coursebox .content .courseimage { width: 100%; }
+.coursebox .content .summary { margin: 4px 0px; }
+ .coursebox .content .courseimage {margin: 0px 0px 10px 0px; }
+.coursebox .content .courseimage img { width:100%; min-width: 200px; max-width: 276px;  min-height: 180px;}
+.courses .coursebox:hover , .courses .coursebox.even{ background-color: #fff;}
+.courses .course-box { border: 1px solid #EFEFEF; margin-bottom: 30px; min-height: 370px; background-color: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); }
+.used-region-side-pre .courses .course-box { min-height: 390px; }
+.coursebox .content .summary p { padding: 0px 7px; text-align: center; font-size: 14px; }
+
+/*courses  End */
+ 
+ /*courses start*/
+ #frontpage-course-list h2 { background-color: #fff; box-shadow: none; color: #557963; font-size: 24px; }
+ a{ color: #0C76B2;}
+ .courses .coursebox { padding:0px; box-shadow: 0 1px 1px rgba(0,0,0,0.2); -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.2); border:none;}
+ //#frontpage-course-list , #frontpage-course-list .courses { width: 100%;}
+ .courses .coursebox:hover , .courses .coursebox.even{ background-color: #fff;}
+  //.coursebox .content .courseimage { margin:0px; }
+ //.coursebox .content .courseimage img { width:100%; min-width: 200px; max-width: 276px;  min-height: 180px;}
+ h2 {color: #fff; background-color: #8CC1C2; box-shadow: 1px 2px 4px 1px #928E8E;}
+ //.coursebox  h3 { width :100%; margin-bottom: 16px; }
+ 
+ .coursebox>.info>h3.coursename{ margin: 0px; width:100%}
+ .coursebox>.info>.coursename a {display: block;
+    /* padding-left: 21px; */
+    background-image: none;
+    background-position: left .2em;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: 19px;
+    border: 3px solid #F0F3F0;
+    color: #6E6E6F;
+    border-bottom: 2px solid #8CC1C2;
+    
+} 
+
+ #frontpage-course-list .coursebox .content { padding-top: 20px; padding-left: 10px; padding-right: 15px; }
+ #frontpage-course-list .coursebox .imagebox { width: 50%; position: relative; float: left; margin-bottom: 15px; }
+ #frontpage-course-list .coursebox .imagebox img { height: 160px; width: 100%; float: left; }
+ #frontpage-course-list .coursebox  p { width: 50%; float: right; margin-right: -10px; }
+ 
+/* Slideshow Start */
+//.slider-container { background-image: url([[pix:theme|slider-pattern]]); background-size: cover;}
+#customCarousel { clear:both; margin-left: auto; margin-right: auto; margin-bottom: 0; }
+.carousel-inner > .item { max-height:600px; min-height: 50px; border-top: 3px solid #8CC1C1; }
+.carousel-control { font-size:32px; width: 30px; height: 30px; line-height: 22px; border: 2px solid #fff; }
+.carousel-caption { text-align: center; padding:12px 26% 18px;; line-height:24px; background: rgba(0,0,0,0.65); }
+.carousel-caption h4 { font-size:24px; line-height: 32px; margin-top: 5px; margin-bottom: 5px; 
+                      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); }
+.carousel-inner .btn { margin-top: 12px; }
+.carousel-indicators { z-index: 2;}
+.carousel-indicators li { border:1px solid #f5f5f5; background-color: rgba(255,255,255,0.5); }
+.carousel-indicators .active { background-color:#1F438F; }
+.carousel-inner>.item>img { width: 1450px; height:auto; background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+    }
+/* End */
+
+
+/* Social icons  Start */
+.socialnetworks a {
+    font-size: 22px;
+    color: #8CC1C1;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.socialnetworks { margin: 8px; }
+
+ /* End */
+ 
+ 
+ /* footer start */
+ #page-footer { border:none; }
+ //#footer { margin-top: 20px; }
+.footer-in { background-color: #4E4444; color:#8cc1c1; padding: 10px 0; font-size: 16px; box-shadow: 1px 2px 4px 1px #928E8E; 
+            padding: 14px 0; }
+
+ /* footer end */
+ 
+  /* login start */
+   #custom-login-page { padding: 50px 0; }
+   #custom-login-page .loginbox { width: 750px; margin: 50px auto; }
+   #custom-login-page .loginpanel { background-color: #8CC1C1; box-shadow: 1px 2px 4px 1px #928E8E; }
+   #custom-login-page .loginpanel h2 { color: #fff; box-shadow: none; border-bottom: 2px solid;}
+   .loginbox .loginform  { margin-top: 2em; }  
+   .loginbox .loginform .form-label { float: left; text-align: right; width: 32%; white-space: nowrap; }
+   .loginbox .loginform .form-label label { font-size: 18px; color: #fff; }
+   .loginbox .loginform .form-input { float: left; }
+   .loginbox .loginform .form-input input {  width: 22em; margin-left: 10px; }
+   .loginbox .loginform { text-align: left; }
+   .clearer{ height: 20px; }
+   .loginbox .loginpanel .desc, .loginbox .guestsub { display: none;}
+    #loginbtn { background-image: linear-gradient(to bottom, #fff, #fff); background-color: #fff; }
+   #loginbtn { font-size: 16px; border-radius: 8px; padding: 8px 17px 8px; }
+   
+  /* Custom CSS Settings
+-------------------------*/
+
+.coursebox .content .courseimage { width:50%;} 
+  
+@media only screen and (min-width:300px) and (max-width:959px) {
+    
+    div.logo { height: 70px;
+    margin-top: 10px;
+    padding: 0;
+    width: 200px; }
+	
+ //.coursebox .content .courseimage{
+		width : 100%;
+	}
+        
+        //.coursebox .content p {
+		clear:both;
+	}
+        
+#frontpage-course-list .coursebox .imagebox, #frontpage-course-list .coursebox p  { width: 100%; }
+.coursebox .content .courseimage {margin: 0px;}
+#frontpage-course-list .coursebox p { margin-right: 0px; }
+      .socialnetworks a { margin-left: 24px; }  
+      .span6 .usermenu { margin: 10px; }
+      .usermenu .moodle-actionmenu .toggle-display, .usermenu .login, .usermenu .login a { color: #777; }
+      .usermenu .moodle-actionmenu .toggle-display { color: #777; }
+      .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret { color: #777; border-top-color: #777; }
+        
+ .container-fluid { padding-left: 10px ; padding-right: 10px;}
+ .slideimg { clear: both; }
+ //.navigation { margin-top: -50px; }
+ .navbar .brand { display:none;}
+ .navbar .btn-navbar { margin: 10px; }
+ .nav-collapse.collapse { margin-top: 4px;}
+ #page-login-index .span6 .usermenu {margin:0px;}
+
+}
+
+
+[[setting:customcss]]
