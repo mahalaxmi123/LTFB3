@@ -1,0 +1,35 @@
+@media (max-width: 640px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1024px) {
+    #login-box { background-size: inherit; }
+    #login-box #page-login-forgot_password #footer { position: relative; width: inherit; }
+}
+@media (max-width: 979px) {
+    body { padding-top: 0; }
+    .slider-text-wrap { top: 30%; }
+}
+@media (max-width: 767px) {
+    html { height: auto; }    
+    #login-box #footer { position: relative; width: inherit; }
+    .loginbox.onecolumn .loginpanel, .loginbox.twocolumns .loginpanel, .loginbox.twocolumns .signuppanel { width: 100%; margin-left: 0; }
+    .loginbox.twocolumns .loginpanel { margin-bottom: 30px; }
+    .loginbox.onecolumn .loginpanel { position: relative; margin: 0 auto; }
+    .footerlinks-box, .copyright-box { text-align: center; }
+    .footerlinks-box { margin-top: 15px; }
+    .carousel-inner > .item { max-height:280px; min-height: 280px; }
+}
+@media (max-width: 640px) {
+    .layout-box { width: auto; }
+}
+@media (max-width: 480px) {
+    .loginpanel .forgetpass { font-size: 14px; width: 45%; }
+}
+
+
+@media (min-width: 1200px){
+.navbar-inner .span3 .usermenu {background-color: #1F438F;}
+}
