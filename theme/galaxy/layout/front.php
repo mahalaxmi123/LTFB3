@@ -29,7 +29,7 @@ $hasslidespeed = (empty($PAGE->theme->settings->slidespeed)) ? false : $PAGE->th
 if ($hasslidespeed) {
 	$slidespeed = $hasslidespeed;
 } else {
-	$slidespeed = '600';
+	$slidespeed = '200';
 }
 
 // Set default (LTR) layout mark-up for a two column page (side-pre-only).
