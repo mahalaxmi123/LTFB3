@@ -54,7 +54,12 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?> moodle-has-zindex">
+    
+<!-- Start Slideshow -->
+<?php require_once(dirname(__FILE__).'/includes/slideshow.php'); ?>
+<!-- End -->
+
+<header role="banner" class="navbar"<?php echo $html->navbarclass ?> moodle-has-zindex">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
             <div class="span3">
@@ -82,9 +87,6 @@ echo $OUTPUT->doctype() ?>
     </nav>
 </header>
     
-<!-- Start Slideshow -->
-<?php require_once(dirname(__FILE__).'/includes/slideshow.php'); ?>
-<!-- End -->
 
 
 <div id="page" class="container-fluid">    

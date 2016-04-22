@@ -82,8 +82,8 @@ $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pi
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
-<h2>Ujjivan</h2>
-<p><img class=img-polaroid src="ujjivan/pix/screenshot.png" /></p>
+<h2>galaxy</h2>
+<p></p>
 </div>
 <p>This theme is based upon the Bootstrapbase theme, which was created for Moodle 2.5</p>
 <h3>Theme Credits</h3>
