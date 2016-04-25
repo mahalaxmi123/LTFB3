@@ -82,7 +82,9 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1f438f', endColorstr='#ff1f438f', GradientType=0); }
  .navbar-inner .span5{ margin: 8px auto ;}
 .navbar .brand, .navbar .nav>li>a { padding: 11px 15px 10px; text-shadow: none; color: #fff; }
-//.navbar .nav>li>a:focus, .navbar .nav>li>a:hover, .navbar .nav li.dropdown>.dropdown-toggle .caret { background-color: #fff; }
+.navbar .brand, .navbar .nav>li>a:hover { padding: 11px 15px 10px; text-shadow: none; color: #C52C2E; }
+.navbar .nav li.dropdown > .dropdown-toggle .caret:hover {border-top-color: #C52C2E; border-bottom-color:#C52C2E; }
+//.navbar .nav>li>a:focus, .navbar .nav>li>a:hover, .navbar .nav li.dropdown>.dropdown-toggle .caret { background-color: #C52C2E; }
 .nav .divider { height: 44px; border-left: 1px solid #1F438F; border-right: 1px solid #1F438F; }
 .dropdown-menu .divider { width: auto; height: 1px; border-left: 0 none; border-right: 0 none;}
 .navbar .nav li.dropdown > .dropdown-toggle .caret { border-top-color: #BFBFBF; border-bottom-color: #BFBFBF; }
@@ -92,12 +94,12 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 .dropdown-menu > li > a { padding: 5px 20px 5px 8px; }
 .dropdown-menu .divider { margin: 5px 1px; }
 
-.dir-ltr .usermenu { margin-top: 5px; float: right; }
-
+.dir-ltr .usermenu { margin-top: 5px; float: right; } 
 .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret { margin-top: 12px; border-top-color: #fff; }
-.jsenabled .usermenu .moodle-actionmenu.show { background: none; }
+.jsenabled .usermenu .moodle-actionmenu.show { background: none;  }
+.jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover{ border-top-color: #C52C2E; }
 .usermenu .login, .usermenu .login a { color: #fff; }
-.usermenu .login a:hover , .usermenu .moodle-actionmenu .toggle-display:hover { color: #0070a8; }
+.usermenu .login a:hover , .usermenu .moodle-actionmenu .toggle-display:hover { color: #C52C2E; }
 .jsenabled .usermenu .moodle-actionmenu > .menubar { margin-bottom: 0;}
 .usermenu .moodle-actionmenu .toggle-display { height: 44px; font-size: 18px; color:#fff;}
 .usermenu .moodle-actionmenu .toggle-display .userbutton .avatars img { border-radius: 1px; border: 1px solid #92bd44; }
@@ -106,12 +108,12 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 .jsenabled .usermenu .moodle-actionmenu.show .menu { padding: 0; border-radius: 0; background: #f5f5f5;
     background: rgba(250,250,250,.92); border: 1px solid #eee; border: 1px solid rgba(0,0,0,.1); border-bottom: none; }
 .jsenabled .usermenu .moodle-actionmenu.show .menu a { border-bottom: 1px solid #eee; border-bottom: 1px solid rgba(0,0,0,.1);}
-.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover { background-color: #3D3D3D;
-    background-image: -moz-linear-gradient(top, #3D3D3D, #3D3D3D);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3D3D3D), to(#3D3D3D));
-    background-image: -webkit-linear-gradient(top, #3D3D3D, #3D3D3D);
-    background-image: -o-linear-gradient(top,#3D3D3D,#3D3D3D);
-    background-image: linear-gradient(to bottom, #3D3D3D, #3D3D3D); }
+.jsenabled .usermenu .moodle-actionmenu.show .menu a:hover { background-color: #C52C2E;;
+    background-image: -moz-linear-gradient(top, #C52C2E;, #C52C2E;);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C52C2E;), to(#C52C2E;));
+    background-image: -webkit-linear-gradient(top, #C52C2E;, #C52C2E;);
+    background-image: -o-linear-gradient(top,#C52C2E;,#C52C2E;);
+    background-image: linear-gradient(to bottom, #C52C2E;,#C52C2E;); }
 .jsenabled .usermenu .moodle-actionmenu.show .menu a:hover, 
 .jsenabled .usermenu .moodle-actionmenu.show .menu a:focus,
 .jsenabled .usermenu .moodle-actionmenu.show .menu a:active { outline: none; }
@@ -153,14 +155,16 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 /* Slideshow Start */
 #customCarousel { clear:both; margin-left: auto; margin-right: auto; margin-bottom: 0; }
 .carousel-inner > .item { max-height:360px; min-height: 500px; }
-.carousel-control { font-size:32px; width: 30px; height: 30px; line-height: 22px; border: 2px solid #fff; }
+.carousel-control { font-size:32px; width: 30px; height: 30px; line-height: 22px; border: 3px solid #c52c2e; color:#c52c2e;}
+.carousel-control:hover { border: 3px solid #c52c2e; color:#c52c2e;}
 //.carousel-caption { text-align: center; padding: 0px 20% 40px; line-height:24px; background: rgba(0,0,0,0.65); }
 .carousel-caption  { width: 70%; margin: auto; text-align: center; line-height: 24px; background: rgba(0,0,0,0.65); 
     position:absolute; bottom:16%; padding:80px;}
 .carousel-caption h4 { font-size:60px; font-size: 60px; font-weight: bolder; line-height: 32px; margin-top: 10px; margin-bottom: 5px; 
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); }
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); color: #C52C2E; }
 .carousel-caption p { color: #FFF; font-size: 18px; line-height: 20px; margin-top: 30px; }
-.carousel-caption .btn { margin-top:30px; }
+.carousel-caption .btn { margin-top:30px; background-color: #c52c2e; background-image: linear-gradient(to bottom, #c52c2e, #c52c2e);
+background-image: linear-gradient(to bottom, #c52c2e, #c52c2e); color: #DAD9D9; font-weight: 600; border: 1px solid #E0AAAA;}
 //.carousel-indicators { z-index: 2;}
 //.carousel-indicators li { border:1px solid #f5f5f5; background-color: rgba(255,255,255,0.5); }
 //.carousel-indicators .active { background-color:#1F438F; }
@@ -200,11 +204,13 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 
 /* Block Start */
 .row-fluid .block-region { margin-bottom: 20px; }
+.row-fluid .sectionname, #frontpage-category-names h2, #frontpage-course-list h2 { background-color: #DAD9D9; padding: 8px;
+ color: #c52c2e;}
 .block { background: none; padding: 0; border: none; box-shadow: none; }
 .block .header { background: none;  }
-.block .header .title h2 { color: #555; font-size: 18px; font-weight: 700; padding: 10px 5px 10px 0; text-transform: lowercase; }
+.block .header .title h2 {color: #c52c2e; background-color: #DAD9D9; font-size: 18px; font-weight: 700; padding: 10px 5px 10px 10px; text-transform: lowercase; }
 .block .header .block_action { margin-top: 5px; }
-.block .content { background: #FBFBFB; border: 1px solid #ECECEC; }
+.block .content { background: #fff; border: 1px solid #ECECEC; }
 .block_html.block .content { padding: 7px 4px; }
 .block_html.block .content .no-overflow { padding: 0; }
 .block_html.block .content table { margin: 0 auto; }
@@ -214,6 +220,8 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 .block_navigation .block_tree .type_activity > p.tree_item.active_tree_node img, 
 .block_settings .block_tree li.item_with_icon > p img { top: 3px; }
 .block .header .commands { padding-top: 0; padding-bottom: 0; }
+.course-box .content li { list-style: none;} 
+
 /* End */
 
 /* Course Serch Start */
@@ -259,7 +267,10 @@ fieldset.coursesearchbox label { vertical-align:super; font-weight:bold; display
 .courses .course-box .courseimage img { width: 100%; min-height: 180px; max-height: 180px; }
 .courses .course-box .content { margin: 15px 10px 10px 10px; }
 .courses .course-box .info h4 { margin-top: 0; }
- .courses .course-box:hover {background-color: #e84c3d ;}
+ .courses .course-box:hover {background-color: #C52C2E;}
+ .courses .course-box .summary-box p:hover,  .course-box .content li:hover ,.course-box .content li a:hover,
+ .courses .course-box .coursetitle a:hover{ color:#fff; }
+ 
  /* End */
 
 /* Login Start */
@@ -324,7 +335,9 @@ box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.35); }
 #page-login-forgot_password .mform .fitem div.fitemtitle {  width: 145px; }
 #page-login-forgot_password .mform .fitem .felement { margin-left: 165px; }
 #page-login-forgot_password .fcontainer { margin: 0; }
+
 /* @end */
+
 
 
 /* Custom CSS Settings

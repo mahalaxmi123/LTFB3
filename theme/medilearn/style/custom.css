@@ -85,7 +85,7 @@ padding: 8px 17px 8px;}
 .block .header h2 { display: block; padding: 8px 15px; margin: 0; font-size: 11px; font-size: 1.1em; line-height: 20px;
 /* text-shadow: 0 1px 0 rgba(255,255,255,0.5); */ text-transform: uppercase; word-wrap: break-word; color: #fff; text-shadow: none;}
 .no-overflow { overflow: hidden; }
-#page-course-view-weeks .span8{ background-color: #F6F9F9; }
+#page-course-view-weeks .span8, #page-mod-quiz-mod .span9,#page-backup-import .span8{ background-color: #F6F9F9; }
       /*block end*/
       
   /*slider start*/
@@ -240,9 +240,7 @@ padding: 8px 17px 8px;}
 		width : 100%;
 	}
         
-        //.coursebox .content p {
-		clear:both;
-	}
+        //.coursebox .content p {clear:both;}
  #frontpage-course-list .coursebox .summary-box { width: 100%; }
 #frontpage-course-list .coursebox .imagebox{ width: 100%; }
 .coursebox .content .courseimage {margin: 0px;}
