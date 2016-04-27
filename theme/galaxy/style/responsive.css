@@ -12,8 +12,12 @@
     body { padding-top: 0; }
     .slider-text-wrap { top: 30%; }
 }
-@media (max-width: 767px) {
-    html { height: auto; }    
+@media (max-width: 767px) { 
+    html { height: auto; }
+    body {  padding-left: 0px; padding-right: 0px; }
+    .carousel-caption { width:100%;position: inherit; padding:0px;}
+    .carousel-caption h4  { font-size: 24px;  margin-top:0px;}
+    .carousel-caption p {margin-top:0px;  line-height: 16px; font-size: 12px; padding: 0px;}
     #login-box #footer { position: relative; width: inherit; }
     .loginbox.onecolumn .loginpanel, .loginbox.twocolumns .loginpanel, .loginbox.twocolumns .signuppanel { width: 100%; margin-left: 0; }
     .loginbox.twocolumns .loginpanel { margin-bottom: 30px; }

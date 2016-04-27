@@ -249,3 +249,6 @@ $temp = new admin_settingpage('theme_galaxy_social', get_string('socialsettings'
 	
     
     $ADMIN->add('theme_galaxy', $temp);
+
+    
+   

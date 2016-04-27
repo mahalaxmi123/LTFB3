@@ -79,6 +79,29 @@ $string['pinterest'] = 'Pinterest URL';
 $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
 
 
+//Contact Setting
+
+$string['contactsettings'] = 'Contact Settings';
+$string['contactsettingssub'] = 'These settings control the Contact Detail';
+$string['contactsettingsdesc'] = 'Enable and determine settings for each Contact detail below.';
+
+$string['contacttitle'] = 'Contact Detail heading';
+$string['contacttitledesc'] = 'This will be use as contact info';
+$string['contactindicatordesc'] = 'Set up this contact info';
+$string['contactnumberdesc'] = 'Specify numbers';
+$string['contacttitledes'] = '';
+$string['contactspotnumber'] = 'Number of contact info ';
+$string['contactspotnumberdesc'] = 'Number of Contact info options will not change until you hit save after changing this number.';
+
+$string['enablecontact'] = 'Enable this Contact info';
+$string['enablecontactdesc'] = 'Will you be using this contact info ?';
+
+
+$string['contactimage'] = 'Contact icon';
+$string['contactimagedesc'] = 'This will be use as icon fo the contact info';
+
+
+
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
