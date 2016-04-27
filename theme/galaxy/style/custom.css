@@ -148,7 +148,7 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 
 /* Footer Start */
 #footer { margin-top: 20px; }
-.footer-in { background-color: #1F438F; color: #fff; padding: 10px 0; font-size: 12px; }
+.footer-in { ackground-color: #3D3D3D; color: #fff; padding: 32px 0; font-size: 12px; }
 .socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
 .copyright-box { text-align: left; margin-top: 5px; }
 .footerlinks-box { text-align: right; }
@@ -170,7 +170,7 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 //.carousel-caption { text-align: center; padding: 0px 20% 40px; line-height:24px; background: rgba(0,0,0,0.65); }
 .carousel-caption  { width: 70%; margin: auto; text-align: center; line-height: 24px; background: rgba(0,0,0,0.65); 
     position:absolute; bottom:16%; padding:60px;}
-.carousel-caption h4 {  font-size: 60px; font-weight: bolder; line-height: 32px; padding-top: 5px; 
+.carousel-caption h4 {  font-size: 60px; font-weight: bolder; line-height: 32px; padding-top: 10px; 
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); color: #C52C2E; }
 .carousel-caption p { color: #FFF; font-size: 18px; line-height: 20px; margin-top: 30px; padding: 16px;}
 .carousel-caption .btn { margin-top:30px; background-color: #c52c2e; background-image: linear-gradient(to bottom, #c52c2e, #c52c2e);
@@ -178,6 +178,7 @@ background-image: linear-gradient(to bottom, #c52c2e, #c52c2e); color: #DAD9D9; 
 //.carousel-indicators { z-index: 2;}
 //.carousel-indicators li { border:1px solid #f5f5f5; background-color: rgba(255,255,255,0.5); }
 //.carousel-indicators .active { background-color:#1F438F; }
+.carousel-indicators{display:none;}
 .carousel-inner>.item>img { width: 100%; height:auto; background-size: cover; background-position: 50% 50%; 
   background-repeat: no-repeat; 
  -webkit-background-size: cover;
@@ -236,6 +237,7 @@ background-image: linear-gradient(to bottom, #c52c2e, #c52c2e); color: #DAD9D9; 
 .block_navigation .block_tree .type_activity > p.tree_item.active_tree_node img, 
 .block_settings .block_tree li.item_with_icon > p img { top: 3px; }
 .block .header .commands { padding-top: 0; padding-bottom: 0; }
+ .course-box .content ul { margin:0px; }
 .course-box .content li { list-style: none;}
 .course-content ul.weeks li.section .content { border: 1px solid #DAD9D9;}
 .course-content ul li.section.main{ border-bottom:none;}

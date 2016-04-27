@@ -1,8 +1,6 @@
 <?php
 /*
  * This file is part of Corplms LMS
- *
- * @author Amit Singh
  * @package theme_galaxy
  */
 

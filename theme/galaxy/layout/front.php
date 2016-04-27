@@ -89,7 +89,7 @@ echo $OUTPUT->doctype() ?>
     
 
 
-<div id="page" class="container-fluid">    
+<div id="page" class="container">    
     <div id="page-content" class="row-fluid">
         <section id="region-main" class="<?php echo $regionmain; ?>">
             <?php
