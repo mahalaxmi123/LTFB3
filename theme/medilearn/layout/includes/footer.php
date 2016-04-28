@@ -17,32 +17,32 @@
 /**
  * The maintenance layout.
  *
- * @package   theme_eguru
+ * @package   theme_medilearn
  * @copyright 2015 Nephzat Dev Team,nephzat.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$footnote = theme_eguru_get_setting('footnote', 'format_text');
-$footnote = theme_eguru_lang($footnote);
-$footerbtitle2 = theme_eguru_get_setting('footerbtitle2', 'format_text');
-$footerbtitle2 = theme_eguru_lang($footerbtitle2);
-$footerbtitle3 = theme_eguru_get_setting('footerbtitle3', 'format_text');
-$footerbtitle3 = theme_eguru_lang($footerbtitle3);
-$footerbtitle4 = theme_eguru_get_setting('footerbtitle4', 'format_text');
-$footerbtitle4 = theme_eguru_lang($footerbtitle4);
+$footnote = theme_medilearn_get_setting('footnote', 'format_text');
+$footnote = theme_medilearn_lang($footnote);
+$footerbtitle2 = theme_medilearn_get_setting('footerbtitle2', 'format_text');
+$footerbtitle2 = theme_medilearn_lang($footerbtitle2);
+$footerbtitle3 = theme_medilearn_get_setting('footerbtitle3', 'format_text');
+$footerbtitle3 = theme_medilearn_lang($footerbtitle3);
+$footerbtitle4 = theme_medilearn_get_setting('footerbtitle4', 'format_text');
+$footerbtitle4 = theme_medilearn_lang($footerbtitle4);
 
-$fburl    = theme_eguru_get_setting('fburl');
+$fburl    = theme_medilearn_get_setting('fburl');
 $fburl    = trim($fburl);
-$pinurl   = theme_eguru_get_setting('pinurl');
+$pinurl   = theme_medilearn_get_setting('pinurl');
 $pinurl   = trim($pinurl);
-$twurl    = theme_eguru_get_setting('twurl');
+$twurl    = theme_medilearn_get_setting('twurl');
 $twurl    = trim($twurl);
-$gpurl    = theme_eguru_get_setting('gpurl');
+$gpurl    = theme_medilearn_get_setting('gpurl');
 $gpurl    = trim($gpurl);
 
-$address  = theme_eguru_get_setting('address');
-$emailid  = theme_eguru_get_setting('emailid');
-$phoneno  = theme_eguru_get_setting('phoneno');
+$address  = theme_medilearn_get_setting('address');
+$emailid  = theme_medilearn_get_setting('emailid');
+$phoneno  = theme_medilearn_get_setting('phoneno');
 
 ?>
 
@@ -55,7 +55,7 @@ $phoneno  = theme_eguru_get_setting('phoneno');
                 	<div class="footer-desc">
                     	<div class="logo-footer">
                         	<a href="<?php echo $CFG->wwwroot;?>">
-                            	<img src="<?php echo theme_eguru_get_logo_url(); ?>" width="183" height="67" alt="Eguru">
+                            	<img src="<?php echo theme_medilearn_get_logo_url(); ?>" width="183" height="67" alt="medilearn">
                             </a>
                         </div>
                         <?php echo '<p>'.$footnote.'</p>'; ?>
@@ -65,7 +65,7 @@ $phoneno  = theme_eguru_get_setting('phoneno');
                 	<div class="footer-nav">
                     	<h4><?php echo $footerbtitle2; ?></h4>
                         <ul>                        	
-                           <?php echo theme_eguru_generate_links('footerblink2'); ?>  
+                           <?php echo theme_medilearn_generate_links('footerblink2'); ?>  
                         </ul>
                     </div>
                 </div>
@@ -77,9 +77,9 @@ $phoneno  = theme_eguru_get_setting('phoneno');
                         	<li class="smedia-01">
                             	<a href="<?php echo $fburl; ?>" target="_blank">
                                 	<span class="media-icon">
-                                    <i class="fa <?php echo get_string('mediaicon1', 'theme_eguru'); ?>"></i>
+                                    <i class="fa <?php echo get_string('mediaicon1', 'theme_medilearn'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame1', 'theme_eguru'); ?></span>
+                                    <span class="media-name"><?php echo get_string('medianame1', 'theme_medilearn'); ?></span>
                                 </a>
                             </li>
 <?php
@@ -90,9 +90,9 @@ endif;
                         	<li class="smedia-02">
 	                            <a href="<?php echo $twurl; ?>" target="_blank">
                                 	<span class="media-icon">
-                                    <i class="fa <?php echo get_string('mediaicon2', 'theme_eguru'); ?>"></i>
+                                    <i class="fa <?php echo get_string('mediaicon2', 'theme_medilearn'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame2', 'theme_eguru'); ?></span>
+                                    <span class="media-name"><?php echo get_string('medianame2', 'theme_medilearn'); ?></span>
                                 </a>
                             </li>
 <?php
@@ -103,9 +103,9 @@ endif;
                         	<li class="smedia-03">
     	                        <a href="<?php echo $gpurl; ?>" target="_blank">
                                 	<span class="media-icon">
-                                    <i class="fa <?php echo get_string('mediaicon3', 'theme_eguru'); ?>"></i>
+                                    <i class="fa <?php echo get_string('mediaicon3', 'theme_medilearn'); ?>"></i>
                                     </span>
-                                    <span class="media-name"><?php echo get_string('medianame3', 'theme_eguru'); ?></span>
+                                    <span class="media-name"><?php echo get_string('medianame3', 'theme_medilearn'); ?></span>
                                 </a>
                             </li>
 <?php
@@ -116,9 +116,9 @@ endif;
                         	<li class="smedia-04">
         	                    <a href="<?php echo $pinurl; ?>" target="_blank">
                                    <span class="media-icon">
-                                   <i class="fa <?php echo get_string('mediaicon4', 'theme_eguru'); ?>"></i>
+                                   <i class="fa <?php echo get_string('mediaicon4', 'theme_medilearn'); ?>"></i>
                                    </span>
-                                   <span class="media-name"><?php echo get_string('medianame4', 'theme_eguru'); ?></span>
+                                   <span class="media-name"><?php echo get_string('medianame4', 'theme_medilearn'); ?></span>
                                 </a>
                             </li>
 <?php
@@ -138,7 +138,7 @@ endif;
 ?>
                         <?php if(!empty($emailid)): ?>
                         <p><i class="fa fa-envelope"></i>
-                        <?php echo get_string('footeremail','theme_eguru'); ?> <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
+                        <?php echo get_string('footeremail','theme_medilearn'); ?> <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
                         </p>
 <?php
 endif;
@@ -151,11 +151,9 @@ endif;
     
 	<div class="footer-foot">
     	<div class="container-fluid">
-<?php echo get_string('copyright','theme_eguru'); ?>
+<?php echo get_string('copyright','theme_medilern'); ?>
         </div>
     </div>
 
 </footer>
 <!--E.O.Footer-->
-<?php
-echo $OUTPUT->standard_end_of_body_html();

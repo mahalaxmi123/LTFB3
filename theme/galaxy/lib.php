@@ -206,6 +206,34 @@ function theme_galaxy_get_setting($setting, $format = false) {
  * All theme functions should start with theme_galaxy_
  * @deprecated since 2.5.1
  */
+function theme_galaxy_course_trim_char($str, $n = 500, $endchar = '&#8230;') {
+    if (strlen($str) < $n) {
+        return $str;
+    }
+
+    $str = preg_replace("/\s+/", ' ', str_replace(array("\r\n", "\r", "\n"), ' ', $str));
+    if (strlen($str) <= $n) {
+        return $str;
+    }
+
+    $out = "";
+    $small = substr($str, 0, $n);
+    $out = $small.$endchar;
+    return $out;
+}
+
+function theme_galaxy_lang($key = '') {
+    $pos = strpos($key, 'lang:');
+    if ($pos !== false) {
+        list($l, $k) = explode(":", $key);
+        $v = get_string($k, 'theme_galaxy');
+        return $v;
+    } else {
+        return $key;
+    }
+
+}
+
 function galaxy_process_css() {
     throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
 }

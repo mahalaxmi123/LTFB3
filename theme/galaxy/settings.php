@@ -31,7 +31,7 @@
 $settings = null;
 
 defined('MOODLE_INTERNAL') || die;
-global $PAGE;
+global $PAGE;{
 
 $ADMIN->add('themes', new admin_category('theme_galaxy', 'Galaxy'));
 
@@ -249,6 +249,74 @@ $temp = new admin_settingpage('theme_galaxy_social', get_string('socialsettings'
 	
     
     $ADMIN->add('theme_galaxy', $temp);
-
     
-   
+    $temp = new admin_settingpage('theme_galaxy_footer', get_string('footersettings', 'theme_galaxy'));
+    
+    /* Footer Content */
+    
+         /* About us*/
+   $name = 'theme_galaxy/blockonetitle';
+    $title = get_string('blockonetitle', 'theme_galaxy');
+    $description = get_string('blockonedesc', 'theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    $name = 'theme_galaxy/blockonecontent';
+    $title = get_string('blockonecontent', 'theme_galaxy');
+    $description = get_string('blockonecontentdesc','theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    
+        /* More Info*/
+    $name = 'theme_galaxy/block2title';
+    $title = get_string('block2title', 'theme_galaxy');
+    $description = get_string('block2titledes','theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    $name = 'theme_galaxy/footnote';
+    $title = get_string('footnote', 'theme_galaxy');
+    $description = get_string('footnotedesc', 'theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting); 
+    
+    
+
+    /* Address , Email , Phone No */		
+    $name = 'theme_galaxy/address';
+    $title = get_string('address', 'theme_galaxy');
+    $description = '';
+    $default = get_string('defaultaddress','theme_galaxy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+				
+				
+    $name = 'theme_galaxy/emailid';
+    $title = get_string('emailid', 'theme_galaxy');
+    $description = '';
+    $default = get_string('defaultemailid','theme_galaxy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+				
+    $name = 'theme_galaxy/phoneno';
+    $title = get_string('phoneno', 'theme_galaxy');
+    $description = '';
+    $default = get_string('defaultphoneno','theme_galaxy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+   $name = 'theme_galaxy/copyright_footer';
+    $title = get_string('copyright_footer', 'theme_galaxy');
+    $description = '';
+    $default = get_string('copyright_default','theme_galaxy');
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
+    $ADMIN->add('theme_galaxy', $temp);    
+}   

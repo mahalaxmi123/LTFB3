@@ -63,15 +63,6 @@ $ADMIN->add('themes', new admin_category('theme_medilearn', 'Medilearn'));
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 
-    // Footnote setting.
-    $name = 'theme_medilearn/footnote';
-    $title = get_string('footnote', 'theme_medilearn');
-    $description = get_string('footnotedesc', 'theme_medilearn');
-    $default = '';
-    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-	
 	$ADMIN->add('theme_medilearn', $temp);
     
     /* Banner Settings */

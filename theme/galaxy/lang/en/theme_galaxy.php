@@ -22,6 +22,28 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['choosereadme'] = '
+<div class="clearfix">
+<div class="well">
+<h2>galaxy</h2>
+<p></p>
+</div>
+<p>This theme is based upon the Bootstrapbase theme, which was created for Moodle 2.5</p>
+<h3>Theme Credits</h3>
+<p><br>
+
+</p>
+</div></div>';
+
+$string['configtitle'] = 'Galaxy';
+
+$string['pluginname'] = 'Galaxy';
+
+$string['region-side-post'] = 'Right';
+$string['region-side-pre'] = 'Left';
+
+
+
 /* General Setting */
 $string['geneicsettings'] = 'General Settings';
 $string['customcss'] = 'Custom CSS';
@@ -80,7 +102,7 @@ $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pi
 
 
 //Contact Setting
-
+/*
 $string['contactsettings'] = 'Contact Settings';
 $string['contactsettingssub'] = 'These settings control the Contact Detail';
 $string['contactsettingsdesc'] = 'Enable and determine settings for each Contact detail below.';
@@ -99,26 +121,34 @@ $string['enablecontactdesc'] = 'Will you be using this contact info ?';
 
 $string['contactimage'] = 'Contact icon';
 $string['contactimagedesc'] = 'This will be use as icon fo the contact info';
+*/
 
 
+//Footer Setting
+$string['footersettings'] = 'Footer Setting';
 
-$string['choosereadme'] = '
-<div class="clearfix">
-<div class="well">
-<h2>galaxy</h2>
-<p></p>
-</div>
-<p>This theme is based upon the Bootstrapbase theme, which was created for Moodle 2.5</p>
-<h3>Theme Credits</h3>
-<p><br>
+$string['blockonetitle'] = ' Title';
+$string['blockonedesc'] = 'Add a title for footer section';
 
-</p>
-</div></div>';
+$string['blockonecontent'] = 'Footer Section Content';
+$string['blockonecontentdesc'] = 'Add content to footer section ';
 
-$string['configtitle'] = 'Galaxy';
+$string['block2title'] = ' Title 2';
+$string['block2titledes'] = 'Add a title for footer section 2';
 
-$string['pluginname'] = 'Galaxy';
+$string['footnote'] = 'Footnote';
+$string['footnotedefault'] = '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.</p>';
+$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
-$string['region-side-post'] = 'Right';
-$string['region-side-pre'] = 'Left';
 
+$string['address'] = 'Address';
+$string['defaultaddress'] = '308 Negra Narrow Lane, Albeeze, New york, 87104';
+
+$string['emailid'] = 'Email';
+$string['defaultemailid'] = 'info@example.com';
+
+$string['phoneno'] = 'Phone No';
+$string['defaultphoneno'] = '(000) 123-456';
+
+$string['copyright_footer'] = 'Copyright';
+$string['copyright_default'] = 'Copyright &copy; 2016- All Right Reserved. ';

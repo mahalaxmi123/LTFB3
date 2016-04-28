@@ -148,15 +148,19 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 
 /* Footer Start */
 #footer { margin-top: 20px; }
-.footer-in { ackground-color: #3D3D3D; color: #fff; padding: 32px 0; font-size: 12px; }
-.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
-.copyright-box { text-align: left; margin-top: 5px; }
-.footerlinks-box { text-align: right; }
+.footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
+//.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
+//.copyright-box { text-align: left; margin-top: 5px; }
+.foot-links h1, .contact-info h1,.footer-desc h1{ color: #fff;  }
+#footer p { font-size: 16px; color: #FFE; }
 .footerlinks a { margin-right: 10px; }
 #footer a { color: #fff; }
 #footer a:hover { text-decoration: none; color: #555; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
-#footer p { margin: 0; }
+#footer p { margin: 0; font-size: 16px; color: #FFE;}
+.fa {font-size: 24px; padding-right: 10px; margin-top: 8px; }
+.footer-foot { background-color:#2b2b2b; padding: 10px; text-align: center;
+}
 #page-footer { border: none; padding: 0; margin: 0; }
 #page-footer .validators, #page-footer .purgecaches, #page-footer .performanceinfo { margin-bottom: 65px; }
 #page-footer .purgecaches { margin-bottom: 0px; }
