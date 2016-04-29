@@ -48,8 +48,7 @@ $string['region-side-pre'] = 'Left';
 $string['geneicsettings'] = 'General Settings';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
-$string['footnote'] = 'Footnote';
-$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
+
 $string['invert'] = 'Invert navbar';
 $string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
 $string['logo'] = 'Logo';
@@ -80,8 +79,9 @@ $string['bannerimagedesc'] = 'Large image to go behind the slide text.';
 $string['bannercolor'] = 'Slide Colour';
 $string['bannercolordesc'] = 'Don\'t want to use an image? Specify a background colour instead';
 
-
+/*
 /* Social Networks */
+/*
 $string['socialsettings'] = 'Social Icon Settings';
 $string['socialheading'] = 'Social networking';
 $string['socialheadingsub'] = 'Engage your users with social networking';
@@ -99,7 +99,7 @@ $string['flickr'] = 'Flickr URL';
 $string['flickrdesc'] = 'Enter the URL of your Flickr page. (i.e http://www.flickr.com/photos/mycollege)';
 $string['pinterest'] = 'Pinterest URL';
 $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
-
+*/
 
 //Contact Setting
 /*
@@ -125,19 +125,26 @@ $string['contactimagedesc'] = 'This will be use as icon fo the contact info';
 
 
 //Footer Setting
-$string['footersettings'] = 'Footer Setting';
 
-$string['blockonetitle'] = ' Title';
-$string['blockonedesc'] = 'Add a title for footer section';
+$string['footersettings'] = 'Footer';
+$string['footerheadingsub'] = 'Set the content that should appear in the footer.';
+$string['footerdesc'] = 'Control the content that appears in the 4 footer sections of the page.';
 
-$string['blockonecontent'] = 'Footer Section Content';
-$string['blockonecontentdesc'] = 'Add content to footer section ';
 
-$string['block2title'] = ' Title 2';
-$string['block2titledes'] = 'Add a title for footer section 2';
+$string['footer1header'] = 'Footer Section 1 Title';
+$string['footer1desc'] = 'Add a title for footer section 1';
+
+$string['footer1content'] = 'Footer Section 1 Content';
+$string['footer1contentdesc'] = 'Add content to footer section 1';
+
+$string['footer2header'] = 'Footer Section 2 Title';
+$string['footer2desc'] = 'Add a title for footer section 2';
+
+$string['footer2content'] = 'Footer Section 2 Content';
+$string['footer2contentdesc'] = 'Add content to footer section 2';
+
 
 $string['footnote'] = 'Footnote';
-$string['footnotedefault'] = '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.</p>';
 $string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
 

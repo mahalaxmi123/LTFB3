@@ -151,7 +151,7 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 .footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
 //.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
 //.copyright-box { text-align: left; margin-top: 5px; }
-.foot-links h1, .contact-info h1,.footer-desc h1{ color: #fff;  }
+.footer-nav h1, .contact-info h1,.footer-desc h1{ color: #fff;  }
 #footer p { font-size: 16px; color: #FFE; }
 .footerlinks a { margin-right: 10px; }
 #footer a { color: #fff; }
