@@ -79,9 +79,8 @@ $string['bannerimagedesc'] = 'Large image to go behind the slide text.';
 $string['bannercolor'] = 'Slide Colour';
 $string['bannercolordesc'] = 'Don\'t want to use an image? Specify a background colour instead';
 
-/*
+
 /* Social Networks */
-/*
 $string['socialsettings'] = 'Social Icon Settings';
 $string['socialheading'] = 'Social networking';
 $string['socialheadingsub'] = 'Engage your users with social networking';
@@ -99,7 +98,7 @@ $string['flickr'] = 'Flickr URL';
 $string['flickrdesc'] = 'Enter the URL of your Flickr page. (i.e http://www.flickr.com/photos/mycollege)';
 $string['pinterest'] = 'Pinterest URL';
 $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
-*/
+
 
 //Contact Setting
 /*
@@ -125,37 +124,46 @@ $string['contactimagedesc'] = 'This will be use as icon fo the contact info';
 
 
 //Footer Setting
-
-$string['footersettings'] = 'Footer';
+$string['footersettings'] = 'Footer Setting';
 $string['footerheadingsub'] = 'Set the content that should appear in the footer.';
 $string['footerdesc'] = 'Control the content that appears in the 4 footer sections of the page.';
-
 
 $string['footer1header'] = 'Footer Section 1 Title';
 $string['footer1desc'] = 'Add a title for footer section 1';
 
-$string['footer1content'] = 'Footer Section 1 Content';
-$string['footer1contentdesc'] = 'Add content to footer section 1';
+$string['footerblock1link'] = 'Footer Section 1 Content';
+$string['footerblock1linkdesc'] = 'Put your link with title, eg:- facebook|http://www.facebook.com';
+$string['footerblock1link_default'] = 'lang:galaxy|http://www.example.com/galaxy.php
+lang:termsofuse|http://www.example.com/terms-of-use.php
+lang:faq|http://www.example.com/faq.php
+lang:support|http://www.example.com/support.php
+lang:contact|http://www.example.com/contact.php';
 
-$string['footer2header'] = 'Footer Section 2 Title';
-$string['footer2desc'] = 'Add a title for footer section 2';
 
-$string['footer2content'] = 'Footer Section 2 Content';
-$string['footer2contentdesc'] = 'Add content to footer section 2';
 
+$string['footer2header'] = 'Footer Section 1 Title';
+$string['footer2headerdesc'] = 'Add a title for footer section 1';
 
 $string['footnote'] = 'Footnote';
+$string['footnotedefault'] = '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.</p>';
 $string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
+$string['footer3header'] = 'Footer Section 3 Title';
+$string['footer3headerdesc'] = 'Add a title for footer section 3';
 
 $string['address'] = 'Address';
 $string['defaultaddress'] = '308 Negra Narrow Lane, Albeeze, New york, 87104';
 
 $string['emailid'] = 'Email';
 $string['defaultemailid'] = 'info@example.com';
-
 $string['phoneno'] = 'Phone No';
 $string['defaultphoneno'] = '(000) 123-456';
 
 $string['copyright_footer'] = 'Copyright';
 $string['copyright_default'] = 'Copyright &copy; 2016- All Right Reserved. ';
+
+
+$string['footerbtitle_desc'] = 'You can put your header eg:- Our Services';
+
+
+

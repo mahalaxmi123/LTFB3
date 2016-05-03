@@ -21,23 +21,29 @@
  * @copyright 2015 Nephzat Dev Team,nephzat.com
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+$footnote = theme_galaxy_get_setting('footnote', 'format_html');
 $footer1header = theme_galaxy_get_setting('footer1header', 'format_text');
 $footer1header = theme_galaxy_lang($footer1header);
-$footer1content = theme_galaxy_get_setting('footer1content', 'format_text');
-$footer1content =  theme_galaxy_generate_links($footer1content);
+
+$footerblock1link = theme_galaxy_get_setting('footerblock1link');
+$footerblock1link = theme_galaxy_generate_links('footerblock1link');
+
+
 
 $footer2header = theme_galaxy_get_setting('footer2header', 'format_text');
 $footer2header = theme_galaxy_lang($footer2header);
 
-$footnote = theme_galaxy_get_setting('footnote', 'format_html');
-
-
+$footer3header = theme_galaxy_get_setting('footer3header', 'format_text');
+$footer3header = theme_galaxy_lang($footer3header);
 
 
 $address  = theme_galaxy_get_setting('address');
 $emailid  = theme_galaxy_get_setting('emailid');
 $phoneno  = theme_galaxy_get_setting('phoneno');
-//$copyright_footer = theme_galaxy_get_setting('copyright_footer');
+$copyright_footer = theme_galaxy_get_setting('copyright_footer');
+
+$footerbtitle = theme_galaxy_get_setting('footerbtitle', 'format_text');
 
 ?>
 
@@ -46,30 +52,28 @@ $phoneno  = theme_galaxy_get_setting('phoneno');
   <div class="footer-main">
     <div class="container-fluid">
       <div class="row-fluid">
-            <div class="span3"> 
-                <div class="footer-nav">
-                    <h1><?php echo $footer1header; ?></h1>
-                    <ul>                        	
-                        <?php echo theme_galaxy_generate_links('footer1content'); ?>  
-                    </ul>
-                </div>  
-            </div>
-            
+        <div class="span3">
+            <div class="footer-nav">
+            <h1> <?php echo $footer1header; ?></h1>
+                <ul>                        	
+                     <?php echo theme_galaxy_generate_links('footerblock1link'); ?>  
+                </ul>
+             </div>
+        </div>
           
          <div class="span5">
           <div class="footer-desc">
-            <h1><?php echo $footer2header; ?></h1> 
-             <?php echo '<p>'.$footnote.'</p>'; ?>
+            <h1><?php echo $footer2header; ?></h1>        	
+             <p><?php echo $footnote; ?>
            </div>
         </div> 
           
         <div class="span4">
             <div class="contact-info">
-                <h1>Contact Us</h1>
+                 <h1><?php echo $footer3header; ?></h1> 
                 <p><?php echo $address; ?><br>
                 <i class="fa fa-phone-square"></i>Phone: <?php echo $phoneno; ?><br>
-                <i class="fa fa-envelope"></i>E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>">
-                    <?php echo $emailid; ?></a>
+                <i class="fa fa-envelope"></i>E-mail: <a class="mail-link" href="mailto:<?php echo $emailid; ?>"><?php echo $emailid; ?></a>
                 </p>
             </div> 
         </div>
@@ -78,12 +82,12 @@ $phoneno  = theme_galaxy_get_setting('phoneno');
   </div>
   <div class="footer-foot">
   	<div class="container-fluid">
-	  	 <?php//if ($copyright_footer): ?>
-      	<p><?php// echo $copyright_footer; ?></p>
-       <?//php endif; ?>
+	  	 <?php if ($copyright_footer): ?>
+      	<p><?php echo $copyright_footer; ?></p>
+       <?php endif; ?>
     </div>
   </div>
 </footer>
 <!--E.O.Footer-->
 
- 
+ <?php  echo $OUTPUT->standard_end_of_body_html() ?>

@@ -170,46 +170,19 @@ function theme_galaxy_get_html_for_settings(renderer_base $output, moodle_page $
     } else {
         $return->heading = $output->page_heading();
     }
- 
-    
+
     $return->footnote = '';
     if (!empty($page->theme->settings->footnote)) {
-        $return->footnote = '<div class="footnote text-center">'.format_text($page->theme->settings->footnote).'</div>';
+        $return->footnote = '<div class="copyright">'.format_text($page->theme->settings->footnote).'</div>';
     }
-
+    
+    $return->copyright_footer = '';
+    if (!empty($page->theme->settings->copyright_footer)) {
+        $return->copyright_footer = '<div class="footer-foot text-center">'.format_text($page->theme->settings->copyright_footer).'</div>';
+    }
     return $return;
-}
-
-/**
- * Display Footer Block Custom Links
- * @param string $menu_name Footer block link name.
- * @return string The Footer links are return.
- */
-function theme_galaxy_generate_links($menuname = '') {
-    global $CFG, $PAGE;
-    $htmlstr = '';
-    $menustr = theme_galaxy_get_setting($menuname);
-    $menusettings = explode("\n", $menustr);
-    foreach ($menusettings as $menukey => $menuval) {
-        $expset = explode("|", $menuval);
-       
-        $ltxt =$expset[0];
-        $ltxt = trim($ltxt);
-        if (empty($ltxt)) {
-            continue;
-        }
-        if (empty($lurl)) {
-            $lurl = 'javascript:void(0);';
-        }
-
-        $pos = strpos($lurl, 'http');
-        if ($pos === false) {
-            $lurl = new moodle_url($lurl);
-        }
-        $htmlstr .= '<li><a href="'.$lurl.'">'.$ltxt.'</a></li>'."\n";
-    }
-
-    return $htmlstr;
+    
+    
 }
 
 /**
@@ -277,6 +250,40 @@ function galaxy_process_css() {
  */
 function galaxy_set_logo() {
     throw new coding_exception('Please call theme_'.__FUNCTION__.' instead of '.__FUNCTION__);
+}
+
+/**
+ * Display Footer Block Custom Links
+ * @param string $menu_name Footer block link name.
+ * @return string The Footer links are return.
+ */
+
+
+function theme_galaxy_generate_links($menuname = '') {
+    global $CFG, $PAGE;
+    $htmlstr = '';
+    $menustr = theme_galaxy_get_setting($menuname);
+    $menusettings = explode("\n", $menustr);
+    foreach ($menusettings as $menukey => $menuval) {
+        $expset = explode("|", $menuval);
+        
+        $ltxt =$expset[0];
+        $ltxt = trim($ltxt);
+        if (empty($ltxt)) {
+            continue;
+        }
+        if (empty($lurl)) {
+            $lurl = 'javascript:void(0);';
+        }
+
+        $pos = strpos($lurl, 'http');
+        if ($pos === false) {
+            $lurl = new moodle_url($lurl);
+        }
+        $htmlstr .= '<li><a href="'.$lurl.'">'.$ltxt.'</a></li>'."\n";
+    }
+
+    return $htmlstr;
 }
 
 /**

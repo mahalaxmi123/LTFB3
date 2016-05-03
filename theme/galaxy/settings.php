@@ -46,8 +46,6 @@ $ADMIN->add('themes', new admin_category('theme_galaxy', 'Galaxy'));
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
-   
-
     // Custom CSS file.
     $name = 'theme_galaxy/customcss';
     $title = get_string('customcss', 'theme_galaxy');
@@ -239,48 +237,55 @@ $temp = new admin_settingpage('theme_galaxy_social', get_string('socialsettings'
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
- 
+	
+    
     $ADMIN->add('theme_galaxy', $temp);
-      */
-    
-    
-      /* Footer Content */
+   */ 
     $temp = new admin_settingpage('theme_galaxy_footer', get_string('footersettings', 'theme_galaxy'));
     $temp->add(new admin_setting_heading('theme_galaxy_footer', get_string('footerheadingsub', 'theme_galaxy'),
         format_text(get_string('footerdesc', 'theme_galaxy'), FORMAT_MARKDOWN)));
+    /* Footer Content */
     
-   $name = 'theme_galaxy/footer1header';
+    $name = 'theme_galaxy/footer1header';
     $title = get_string('footer1header', 'theme_galaxy');
     $description = get_string('footer1desc', 'theme_galaxy');
     $default = '';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
     
-    $name = 'theme_galaxy/footer1content';
-    $title = get_string('footer1content', 'theme_galaxy');
-    $description = get_string('footer1contentdesc','theme_galaxy');
-    $default = '';
+    
+    $name = 'theme_galaxy/footerblock1link';
+    $title = get_string('footerblock1link', 'theme_galaxy');
+    $description = get_string('footerblock1linkdesc','theme_galaxy');
+    $default = get_string('footerblock1link', 'theme_galaxy');
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
     
-
+        /* More Info*/
     $name = 'theme_galaxy/footer2header';
     $title = get_string('footer2header', 'theme_galaxy');
-    $description = get_string('footer2desc','theme_galaxy');
+    $description = get_string('footer2headerdesc','theme_galaxy');
     $default = '';
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
     
-    $name = 'theme_galaxy/footer2content';
-    $title = get_string('footer2content', 'theme_galaxy');
-    $description = get_string('footer2content', 'theme_galaxy');
+    $name = 'theme_galaxy/footnote';
+    $title = get_string('footnote', 'theme_galaxy');
+    $description = get_string('footnotedesc', 'theme_galaxy');
     $default = '';
     $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting); 
     
     
-
+    $name = 'theme_galaxy/footer3header';
+    $title = get_string('footer3header', 'theme_galaxy');
+    $description = get_string('footer3headerdesc','theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_configtext($name, $title, $description, $default);
+    $temp->add($setting);
+    
     /* Address , Email , Phone No */		
     $name = 'theme_galaxy/address';
     $title = get_string('address', 'theme_galaxy');
@@ -311,5 +316,7 @@ $temp = new admin_settingpage('theme_galaxy_social', get_string('socialsettings'
     $setting = new admin_setting_configtext($name, $title, $description, $default);
     $temp->add($setting);
     
+    
+     
     $ADMIN->add('theme_galaxy', $temp);    
 }   
