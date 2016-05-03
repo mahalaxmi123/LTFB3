@@ -24,7 +24,6 @@
 
 // Get the HTML for the settings bits.
 $html = theme_galaxy_get_html_for_settings($OUTPUT, $PAGE);
-$copyright_footer = theme_galaxy_get_setting('copyright_footer');
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -60,7 +59,7 @@ echo $OUTPUT->doctype() ?>
             </div>
             
               <div class="span3">
-        <?php echo $OUTPUT->user_menu(); ?>
+        <?php //echo $OUTPUT->user_menu(); ?>
         </div>
             
         </div>
@@ -85,13 +84,25 @@ echo $OUTPUT->doctype() ?>
 
 </div>
     
-< <div class="footer-foot">
-  	<div class="container-fluid">
-	  	 <?php if ($copyright_footer): ?>
-      	<p><?php echo $copyright_footer; ?></p>
-       <?php endif; ?>
+<footer id="footer">
+    <div class="footer-in">
+        <div class="container-fluid">
+            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
+            <div class="row-fluid">
+                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
+                <div class="span6 footerlinks-box">
+                    <!-- Start Social Icons -->
+                    <?php require_once(dirname(__FILE__) . '/includes/socialicons.php'); ?>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</footer>
+
+<?php if (!empty($OUTPUT->standard_footer_html())) { ?>
+    <footer id="page-footer"> <?php echo $OUTPUT->standard_footer_html(); ?></footer>
+<?php } ?>
     
 </body>
 </html>

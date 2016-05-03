@@ -175,14 +175,8 @@ function theme_galaxy_get_html_for_settings(renderer_base $output, moodle_page $
     if (!empty($page->theme->settings->footnote)) {
         $return->footnote = '<div class="copyright">'.format_text($page->theme->settings->footnote).'</div>';
     }
-    
-    $return->copyright_footer = '';
-    if (!empty($page->theme->settings->copyright_footer)) {
-        $return->copyright_footer = '<div class="footer-foot text-center">'.format_text($page->theme->settings->copyright_footer).'</div>';
-    }
+
     return $return;
-    
-    
 }
 
 /**

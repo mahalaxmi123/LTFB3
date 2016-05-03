@@ -38,34 +38,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<header role="banner" class="navbar"<?php echo $html->navbarclass ?> moodle-has-zindex">
-    <nav role="navigation" class="navbar-inner">
-        <div class="container-fluid">
-            <div class="span3">
-        <?php echo $html->heading; ?>
-        </div>
-            <div class="span5">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>            
-            <div class="nav-collapse collapse">
-                <?php echo $OUTPUT->custom_menu(); ?>
-                <ul class="nav pull-right">
-                    <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                </ul>
-            </div>
-            </div>
-            
-              <div class="span3">
-        <?php echo $OUTPUT->user_menu(); ?>
-        </div>
-            
-        </div>
-    </nav>
-</header>
-    
+<div class="login-header"><?php echo $html->heading; ?></div>
     
 <div id="page" class="container-fluid">
 
@@ -81,8 +54,26 @@ echo $OUTPUT->doctype() ?>
 
 </div>
     
-<!-- Start footer -->
-<?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
-<!-- End -->
+<footer id="footer">
+    <div class="footer-in">
+        <div class="container-fluid">
+            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
+            <div class="row-fluid">
+                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
+                <div class="span6 footerlinks-box">
+                    <!-- Start Social Icons -->
+                    <?php require_once(dirname(__FILE__) . '/includes/socialicons.php'); ?>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<?php if (!empty($OUTPUT->standard_footer_html())) { ?>
+    <footer id="page-footer"> <?php echo $OUTPUT->standard_footer_html(); ?></footer>
+<?php } ?>
+
+<?php echo $OUTPUT->standard_end_of_body_html() ?>
 </body>
 </html>
