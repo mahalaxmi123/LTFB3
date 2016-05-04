@@ -257,28 +257,36 @@ function theme_galaxy_generate_links($menuname = '') {
     global $CFG, $PAGE;
     $htmlstr = '';
     $menustr = theme_galaxy_get_setting($menuname);
-    $menusettings = explode("\n", $menustr);
-    foreach ($menusettings as $menukey => $menuval) {
-        $expset = explode("|", $menuval);
-        
-        $ltxt =$expset[0];
-        $ltxt = trim($ltxt);
-        if (empty($ltxt)) {
-            continue;
-        }
-        if (empty($lurl)) {
-            $lurl = 'javascript:void(0);';
-        }
+    if(!empty($menustr) && $menustr != ''){
+        $menusettings = explode("\n", $menustr);
+        //print_r($menusettings);exit;
+         foreach ($menusettings as $menukey => $menuval) {
+             $expset = explode("|", $menuval);
+             list($ltxt, $lurl) = $expset;
+             $ltxt = trim($ltxt);
 
-        $pos = strpos($lurl, 'http');
-        if ($pos === false) {
-            $lurl = new moodle_url($lurl);
-        }
-        $htmlstr .= '<li><a href="'.$lurl.'">'.$ltxt.'</a></li>'."\n";
+             $ltxt = theme_galaxy_lang($ltxt);
+             $lurl = trim($lurl);
+             if (empty($ltxt)) {
+                 continue;
+             }
+             if (empty($lurl)) {
+                 $lurl = 'javascript:void(0);';
+             }
+
+             $pos = strpos($lurl, 'http');
+             if ($pos === false) {
+                 $lurl = new moodle_url($lurl);
+             }
+             $htmlstr .= '<li><a href="'.$lurl.'">'.$ltxt.'</a></li>'."\n";
+         }
+
+         return $htmlstr;
     }
-
-    return $htmlstr;
+    
+    
 }
+
 
 /**
  * All theme functions should start with theme_galaxy_

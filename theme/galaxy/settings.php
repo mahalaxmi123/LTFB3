@@ -256,11 +256,20 @@ $temp = new admin_settingpage('theme_galaxy_social', get_string('socialsettings'
     
     $name = 'theme_galaxy/footerblock1link';
     $title = get_string('footerblock1link', 'theme_galaxy');
-    $description = get_string('footerblock1linkdesc','theme_galaxy');
-    $default = get_string('footerblock1link', 'theme_galaxy');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
-     $setting->set_updatedcallback('theme_reset_all_caches');
+    $description = get_string('footerblock1linkdesc', 'theme_galaxy');
+    //$default = get_string('footerblock1link_default', 'theme_galaxy');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
+    
+//    $name = 'theme_galaxy/footerblock1link';
+//    $title = get_string('footerblock1link', 'theme_galaxy');
+//    $description = get_string('footerblock1linkdesc','theme_galaxy');
+//    $default = get_string('footerblock1link', 'theme_galaxy');
+//    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+//    $setting->set_updatedcallback('theme_reset_all_caches');
+//    $temp->add($setting);
     
         /* More Info*/
     $name = 'theme_galaxy/footer2header';

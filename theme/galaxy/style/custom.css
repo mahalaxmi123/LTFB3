@@ -14,8 +14,8 @@ ol { margin-top: 15px; }
 div.modified { display: none !important; }
 .container-fluid { max-width: 1170px; }
 input[type="text"], input[type="password"], textarea, select { border-radius: 0; padding: 6px 10px; }
-a, a:visited { color: #1f438f; }
-a:hover, a:active { color: #666; text-decoration: none; }
+a, a:visited { color: #000; }
+a:hover, a:active { color: #1f438f; text-decoration: none; }
 .mform .btn-cancel { color: #0b3335;; }
 a.link-as-button { color: #0b3335; }
 table#form td.submit, .form-buttons, .path-admin .buttons, #fitem_id_submitbutton, .fp-content-center form+div, 
@@ -153,13 +153,15 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 .footer-main { background-color: #3D3D3D; color: #fff; padding: 26px 0; font-size: 12px; }
 //.socialnetworks, .footerlinks { display: inline-block; vertical-align: middle; }
 //.copyright-box { text-align: left; margin-top: 5px; }
-.footer-nav h1, .contact-info h1,.footer-desc h1{ color: #fff;  }
-#footer p { font-size: 16px; color: #FFE; }
+.footer-nav h1, .contact-info h1,.footer-desc h1{ color:#DAD9D9; padding: 10px; }
+#footer .footer-desc p, #footer .contact-info p { font-size: 14px; color: #dcdcdc; padding: 10px;}
+#footer .footer-nav ul { margin: 0px; }
+#footer .footer-nav ul li { font-size: 14px; list-style: none; padding-left: 10px; }
 .footerlinks a { margin-right: 10px; }
-#footer a { color: #fff; }
-#footer a:hover { text-decoration: none; color: #555; }
+#footer a { color: #dcdcdc; }
+#footer a:hover { text-decoration: none; color: #fff; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
-#footer p { margin: 0; font-size: 16px; color: #FFE;}
+#footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;;}
 .fa {font-size: 24px; padding-right: 10px; margin-top: 8px; }
 .footer-foot { background-color:#2b2b2b; padding: 10px; text-align: center;
 }
@@ -170,12 +172,14 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 
 /* Slideshow Start */
 #customCarousel { clear:both; margin-left: auto; margin-right: auto; margin-bottom: 0; }
-.carousel-inner > .item { max-height:360px; min-height:500px; }
-.carousel-control { font-size:32px; width: 30px; height: 30px; line-height: 22px; border: 3px solid #c52c2e; color:#c52c2e;}
+//.carousel-inner > .item { min-height:500px; }
+.carousel-control { font-size:32px; width: 30px; height: 30px; line-height: 22px; border: 3px solid #c52c2e; color:#c52c2e;
+ top: 49%; left: 88px;}
+.carousel-control.right { left: auto; right: 88px;}
 .carousel-control:hover { border: 3px solid #c52c2e; color:#c52c2e;}
 //.carousel-caption { text-align: center; padding: 0px 20% 40px; line-height:24px; background: rgba(0,0,0,0.65); }
 .carousel-caption  { width: 70%; margin: auto; text-align: center; line-height: 24px; background: rgba(0,0,0,0.65); 
-    position:absolute; bottom:16%; padding:60px;}
+    position:absolute; bottom:22%; padding:60px;}
 .carousel-caption h4 {  font-size: 60px; font-weight: bolder; line-height: 32px; padding-top: 10px; 
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); color: #C52C2E; }
 .carousel-caption p { color: #FFF; font-size: 18px; line-height: 20px; margin-top: 30px; padding: 16px;}
@@ -309,7 +313,7 @@ fieldset.coursesearchbox label { vertical-align:super; font-weight:bold; display
 .path-login { padding: 0; background: none; }
 .path-login .login-header, .path-login #page-footer { display: none !important; }
 #login-box #region-main { background: none; min-height: 450px; }
-#login-box #footer { position: fixed; bottom: 0; width: 100%; }
+#login-box #footer { position: none; bottom: 0; width: 100%; }
 .loginbox, .loginbox.twocolumns { margin: 0; }
 /*loginpanel, .signuppanel { margin: 0 auto; color: #fff; background: #1F438F; /* Old browsers 
 background: -moz-linear-gradient(left,  #1F438F 0%, #153c8f 100%); /* FF3.6+ 
@@ -365,11 +369,11 @@ box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.35); }
 /* @end */
 
 /* login box */
- .loginbox.onecolumn .loginpanel { max-width: 500px;
+ .loginbox.onecolumn .loginpanel { max-width:46%;
     max-height: 364px;
     padding: 1px;
     margin: auto;
-    margin-top: 8%;
+    margin-top: 5%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -405,6 +409,7 @@ box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.35); }
     text-align: left;
     margin-bottom: 40px;
 }
+#page-content { margin: 30px auto; } 
 
 .loginpanel a, .signuppanel a {
    color: #1f438f;

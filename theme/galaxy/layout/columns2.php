@@ -33,6 +33,8 @@ if (right_to_left()) {
     $regionmain = 'span9';
     $sidepre = 'span3 pull-right';
 }
+$copyright_footer = theme_galaxy_get_setting('copyright_footer');
+
 
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
@@ -93,19 +95,13 @@ echo $OUTPUT->doctype() ?>
 </div>
     
 <footer id="footer">
-    <div class="footer-in">
-        <div class="container-fluid">
-            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-            <div class="row-fluid">
-                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
-                <div class="span6 footerlinks-box">
-                    <!-- Start Social Icons -->
-                    <?php require_once(dirname(__FILE__) . '/includes/socialicons.php'); ?>
-                    <!-- End -->
-                </div>
-            </div>
+    <div class="footer-foot">
+  	<div class="container-fluid">
+	  	 <?php if ($copyright_footer): ?>
+      	<p><?php echo $copyright_footer; ?></p>
+       <?php endif; ?>
         </div>
-    </div>
+    </div> 
 </footer>
 
 <?php if (!empty($OUTPUT->standard_footer_html())) { ?>

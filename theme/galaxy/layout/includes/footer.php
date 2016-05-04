@@ -22,25 +22,21 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$footnote = theme_galaxy_get_setting('footnote', 'format_html');
 $footer1header = theme_galaxy_get_setting('footer1header', 'format_text');
-$footer1header = theme_galaxy_lang($footer1header);
-
-$footerblock1link = theme_galaxy_get_setting('footerblock1link');
-$footerblock1link = theme_galaxy_generate_links('footerblock1link');
-
-
 
 $footer2header = theme_galaxy_get_setting('footer2header', 'format_text');
-$footer2header = theme_galaxy_lang($footer2header);
+
+//$footer2header = theme_galaxy_lang($footer2header);
 
 $footer3header = theme_galaxy_get_setting('footer3header', 'format_text');
-$footer3header = theme_galaxy_lang($footer3header);
+//$footer3header = theme_galaxy_lang($footer3header);
 
 
 $address  = theme_galaxy_get_setting('address');
 $emailid  = theme_galaxy_get_setting('emailid');
 $phoneno  = theme_galaxy_get_setting('phoneno');
+
+$footnote = theme_galaxy_get_setting('footnote', 'format_html');
 $copyright_footer = theme_galaxy_get_setting('copyright_footer');
 
 $footerbtitle = theme_galaxy_get_setting('footerbtitle', 'format_text');
@@ -61,14 +57,14 @@ $footerbtitle = theme_galaxy_get_setting('footerbtitle', 'format_text');
              </div>
         </div>
           
-         <div class="span5">
+         <div class="span6">
           <div class="footer-desc">
             <h1><?php echo $footer2header; ?></h1>        	
              <p><?php echo $footnote; ?>
            </div>
         </div> 
           
-        <div class="span4">
+        <div class="span3">
             <div class="contact-info">
                  <h1><?php echo $footer3header; ?></h1> 
                 <p><?php echo $address; ?><br>
@@ -80,6 +76,7 @@ $footerbtitle = theme_galaxy_get_setting('footerbtitle', 'format_text');
       </div>
     </div>
   </div>
+    
   <div class="footer-foot">
   	<div class="container-fluid">
 	  	 <?php if ($copyright_footer): ?>

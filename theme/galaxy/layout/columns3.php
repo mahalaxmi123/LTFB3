@@ -28,8 +28,6 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
-
 // Get the HTML for the settings bits.
 $html = theme_galaxy_get_html_for_settings($OUTPUT, $PAGE);
 
@@ -38,6 +36,8 @@ $regionmainbox = 'span9';
 $regionmain = 'span8 pull-right';
 $sidepre = 'span4 desktop-first-column';
 $sidepost = 'span3 pull-right';
+$copyright_footer = theme_galaxy_get_setting('copyright_footer');
+
 // Reset layout mark-up for RTL languages.
 if (right_to_left()) {
     $regionmainbox = 'span9 pull-right';
@@ -109,19 +109,13 @@ echo $OUTPUT->doctype() ?>
 </div>
 
 <footer id="footer">
-    <div class="footer-in">
-        <div class="container-fluid">
-            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
-            <div class="row-fluid">
-                <div class="span6 copyright-box"><?php echo $html->footnote; ?></div>
-                <div class="span6 footerlinks-box">
-                    <!-- Start Social Icons -->
-                    <?php require_once(dirname(__FILE__) . '/includes/socialicons.php'); ?>
-                    <!-- End -->
-                </div>
-            </div>
+    <div class="footer-foot">
+  	<div class="container-fluid">
+	  	 <?php if ($copyright_footer): ?>
+      	<p><?php echo $copyright_footer; ?></p>
+       <?php endif; ?>
         </div>
-    </div>
+    </div>   
 </footer>
 
 <?php if (!empty($OUTPUT->standard_footer_html())) { ?>

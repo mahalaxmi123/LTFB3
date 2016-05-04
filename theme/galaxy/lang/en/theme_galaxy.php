@@ -124,6 +124,7 @@ $string['contactimagedesc'] = 'This will be use as icon fo the contact info';
 
 
 //Footer Setting
+$string['galaxy'] = 'Galaxy';
 $string['footersettings'] = 'Footer Setting';
 $string['footerheadingsub'] = 'Set the content that should appear in the footer.';
 $string['footerdesc'] = 'Control the content that appears in the 4 footer sections of the page.';
@@ -133,13 +134,7 @@ $string['footer1desc'] = 'Add a title for footer section 1';
 
 $string['footerblock1link'] = 'Footer Section 1 Content';
 $string['footerblock1linkdesc'] = 'Put your link with title, eg:- facebook|http://www.facebook.com';
-$string['footerblock1link_default'] = 'lang:galaxy|http://www.example.com/galaxy.php
-lang:termsofuse|http://www.example.com/terms-of-use.php
-lang:faq|http://www.example.com/faq.php
-lang:support|http://www.example.com/support.php
-lang:contact|http://www.example.com/contact.php';
-
-
+$string['footerblock1link_default'] = 'Galaxy|http://www.example.com/galaxy.php';
 
 $string['footer2header'] = 'Footer Section 1 Title';
 $string['footer2headerdesc'] = 'Add a title for footer section 1';
