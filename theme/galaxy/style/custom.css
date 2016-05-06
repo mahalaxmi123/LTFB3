@@ -339,7 +339,7 @@ box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.35); }
 .loginpanel .guestsub { margin: 0; padding: 0; }
 .loginpanel #login { overflow: hidden; }
 .loginpanel .loginform .form-label { float: none; width: 100%; text-align: left; }
-.loginpanel .loginform .form-input { float: none; width: 100%; margin-bottom: 20px; }
+.loginpanel .loginform .form-input { float: none; width: 70%; margin: 20px auto; }
 .loginbox .loginform .form-input input { width: 100%; box-sizing: border-box; max-width: 100%; padding: 7px 10px 7px 50px; height: inherit; line-height: 22px;  margin: 0; border-radius: 0; border: none; }
 //.loginform input#username, .loginform input#password { background-image: url([[pix:theme|username]]); background-repeat: no-repeat; background-position: left; background-color: #fff; }
 //.loginform input#password { background-image: url([[pix:theme|password]]); }
