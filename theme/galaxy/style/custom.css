@@ -46,18 +46,6 @@ body.has_dock #page { padding-left: 20px; }
 .ui-dialog, .user-enroller-panel { z-index: 4; }
 /* End */
 
-/* Accordian */
-/*.accordion-group { margin-bottom: 10px; border-radius: 0; border: none; }
-.accordion-heading .accordion-toggle { padding: 6px 0; }
-.accordion-heading { font-size: 16px; font-weight: 500; background: none; line-height: 22px; }
-.accordion-heading a { color: #14bcc5; }
-.accordion-heading.minus a { color: #fff; }
-.accordion-heading a:hover, .accordion-heading a:visited, .accordion-heading a:active, .accordion-heading a:focus { text-decoration: none; }
-.accordion-heading .accordion-toggle { padding-left: 34px; background: url([[pix:theme|icon-plus]]) no-repeat 0 5px; }
-.accordion-heading.minus .accordion-toggle { background-image: url([[pix:theme|icon-minus]]) }
-.accordion-inner { border: none; padding: 8px 35px; font-size: 16px; font-weight: 300; }*/
-/* End */
-
 /* Mform Start */
 .mform fieldset.collapsible legend a.fheader { font-size: 16px; font-weight: normal; }
 .mform fieldset legend { font-size: 20px; }
@@ -159,7 +147,7 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
 #footer .footer-nav ul li { font-size: 14px; list-style: none; padding-left: 10px; }
 .footerlinks a { margin-right: 10px; }
 #footer a { color: #dcdcdc; }
-#footer a:hover { text-decoration: none; color: #fff; }
+#footer a:hover { text-decoration: none; color: #c52c2e; }
 #footer .row-fluid [class*="span"] { min-height: auto; }
 #footer .footer-foot p { margin: 0; font-size: 16px; color: #dcdcdc;;}
 .fa {font-size: 24px; padding-right: 10px; margin-top: 8px; }
@@ -182,7 +170,7 @@ div .logo {background:  url([[setting:logo]]) no-repeat 0 0; float: left; height
     position:absolute; bottom:22%; padding:60px;}
 .carousel-caption h4 {  font-size: 60px; font-weight: bolder; line-height: 32px; padding-top: 10px; 
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65); color: #C52C2E; }
-.carousel-caption p { color: #FFF; font-size: 18px; line-height: 20px; margin-top: 30px; padding: 16px;}
+.carousel-caption p { color: #FFF; font-size: 16px; line-height: 20px; margin-top: 30px; padding: 16px;}
 .carousel-caption .btn { margin-top:30px; background-color: #c52c2e; background-image: linear-gradient(to bottom, #c52c2e, #c52c2e);
 background-image: linear-gradient(to bottom, #c52c2e, #c52c2e); color: #DAD9D9; font-weight: 600; border: 1px solid #E0AAAA;}
 //.carousel-indicators { z-index: 2;}
@@ -195,15 +183,6 @@ background-image: linear-gradient(to bottom, #c52c2e, #c52c2e); color: #DAD9D9; 
   -moz-background-size: cover;
   -o-background-size: cover;
  }
-/* End */
-
-/* Social Icon Start */
-.socialnetworks a { font-size:30px; margin-left:10px; cursor:pointer; }
-.socialnetworks a:hover { color:#555; }
-.fa-googleplus:before { content: "\f0d5"; }
-.fa-googleplus-square:before { content: "\f0d4"; }
-.fa-flickr-square:before { content: "\f16e"; }
-.fa-website:before  { content: "\f0ac"; }
 /* End */
 
 /* Forumpost Start */
