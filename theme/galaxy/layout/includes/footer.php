@@ -60,7 +60,7 @@ $footerbtitle = theme_galaxy_get_setting('footerbtitle', 'format_text');
          <div class="span6">
           <div class="footer-desc">
             <h1><?php echo $footer2header; ?></h1>        	
-             <p><?php echo $footnote; ?>
+             <p><?php echo $footnote; ?></p>
            </div>
         </div> 
           
