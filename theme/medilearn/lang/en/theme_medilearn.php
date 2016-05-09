@@ -48,10 +48,6 @@ Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
 $string['configtitle'] = 'Medilearn';
 $string['pluginname'] = 'Medilearn';
 
-$string['about'] = 'About';
-$string['aboutus'] = 'About Us';
-$string['address'] = 'Address';
-
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
@@ -64,7 +60,8 @@ $string['invert'] = 'Invert navbar';
 $string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
 $string['logo'] = 'Logo';
 $string['logodesc'] = 'The logo is only displayed in the header of the front page and login page.<br /> If the height of your logo is more than 75px add div.logo {height: 100px;} to the Custom CSS box below, amending accordingly if the height is other than 100px.';
-
+$string['footnote'] = 'Footnote';
+$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.Please give the either language key or text.For ex: lang:display or Display';
 
 /* Banners Setting */
 $string['bannersettings'] = 'Slideshow Settings';
@@ -110,39 +107,3 @@ $string['flickr'] = 'Flickr URL';
 $string['flickrdesc'] = 'Enter the URL of your Flickr page. (i.e http://www.flickr.com/photos/mycollege)';
 $string['pinterest'] = 'Pinterest URL';
 $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
-
-/* footer Networks */
-$string['about'] = 'About';
-$string['aboutus'] = 'About Us';
-$string['address'] = 'Address'; 
-
-$string['footnote'] = 'Footnote';
-$string['footnotedefault'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.';
-$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.Please give the either language key or text.For ex: lang:display or Display';
-$string['footerblock'] = 'Footer Block';
-$string['footerheading'] = 'Footer Blocks';
-$string['title'] = 'Title';
-$string['footerbtitle_desc'] = 'Please give the footer block title either language key or text.For ex: lang:display or Display';
-$string['footerbtitle2default'] = 'Quick Links';
-
-$string['footerbtitle3default'] = 'Follow Us';
-$string['footerbtitle4default'] = 'Contact';
-$string['footerblink'] = 'Footer Block Link';
-$string['footerblink2default'] = 'lang:aboutus|http://www.example.com/about-us.php
-lang:termsofuse|http://www.example.com/terms-of-use.php
-lang:faq|http://www.example.com/faq.php
-lang:support|http://www.example.com/support.php
-lang:contact|http://www.example.com/contact.php';
-$string['footerblink_desc'] = 'You can configure a Footer Block Links here to be shown by themes. Each line consists of some menu text either language key or text, a link URL (optional),separated by pipe characters.For example:
-<pre>
-lang:moodlecommunity|https://moodle.org
-Moodle Support|https://moodle.org/support
-</pre>';
-$string['headerheading'] = 'Header';
-
-$string['defaultaddress'] = '308 Negra Narrow Lane, Albeeze, New york, 87104';
-$string['defaultemailid'] = 'info@example.com';
-$string['emailid'] = 'Email';
-
-$string['phoneno'] = 'Phone No';
-$string['defaultphoneno'] = '(000) 123-456';

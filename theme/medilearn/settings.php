@@ -62,6 +62,14 @@ $ADMIN->add('themes', new admin_category('theme_medilearn', 'Medilearn'));
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
+    
+    $name = 'theme_medilearn/footnote';
+    $title = get_string('footnote', 'theme_medilearn');
+    $description = get_string('footnotedesc', 'theme_medilearn');
+    $default = '';
+    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
 
 	$ADMIN->add('theme_medilearn', $temp);
     
@@ -238,89 +246,3 @@ $temp = new admin_settingpage('theme_medilearn_social', get_string('socialsettin
 	
     
     $ADMIN->add('theme_medilearn', $temp);
-
-    /* Footer Settings start */
-    $temp = new admin_settingpage('theme_medilearn_footer', get_string('footerheading', 'theme_medilearn'));
-
-    // Footer Block1.
-    $name = 'theme_medilearn_footerblock1heading';
-    $heading = get_string('footerblock', 'theme_medilearn').' 1 ';
-    $information = '';
-    $setting = new admin_setting_heading($name, $heading, $information);
-    $temp->add($setting);
-
-    /* Footer Content */
-    $name = 'theme_medilearn/footnote';
-    $title = get_string('footnote', 'theme_medilearn');
-    $description = get_string('footnotedesc', 'theme_medilearn');
-    $default = 'lang:footnotedefault';
-    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    /* Footer Block1. */
-
-    /* Footer Block2. */
-    $name = 'theme_medilearn_footerblock2heading';
-    $heading = get_string('footerblock', 'theme_medilearn').' 2 ';
-    $information = '';
-    $setting = new admin_setting_heading($name, $heading, $information);
-    $temp->add($setting);
-
-    $name = 'theme_medilearn/footerbtitle2';
-    $title = get_string('footerblock', 'theme_medilearn').' '.get_string('title', 'theme_medilearn').' 2 ';
-    $description = get_string('footerbtitle_desc', 'theme_medilearn');
-    $default = 'lang:footerbtitle2default';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    $name = 'theme_medilearn/footerblink2';
-    $title = get_string('footerblink', 'theme_medilearn').' 2';
-    $description = get_string('footerblink_desc', 'theme_medilearn');
-    $default = get_string('footerblink2default', 'theme_medilearn');
-    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-    /* Footer Block2 */
-   
-  /* Footer Block3. */
-    $name = 'theme_medilearn_footerblock4heading';
-    $heading = get_string('footerblock', 'theme_medilearn').' 3 ';
-    $information = '';
-    $setting = new admin_setting_heading($name, $heading, $information);
-    $temp->add($setting);
-
-    // Fooer Block Title 4.
-    $name = 'theme_medilearn/footerbtitle4';
-    $title = get_string('footerblock', 'theme_medilearn').' '.get_string('title', 'theme_medilearn').' 3 ';
-    $description = get_string('footerbtitle_desc', 'theme_medilearn');
-    $default = 'footerbtitle3';
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $temp->add($setting);
-
-    /* Address , Phone No ,Email */
-    $name = 'theme_medilearn/address';
-    $title = get_string('address', 'theme_medilearn');
-    $description = '';
-    $default = get_string('defaultaddress', 'theme_medilearn');
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $temp->add($setting);
-
-    $name = 'theme_medilearn/phoneno';
-    $title = get_string('phoneno', 'theme_medilearn');
-    $description = '';
-    $default = get_string('defaultphoneno', 'theme_medilearn');
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $temp->add($setting);
-
-    $name = 'theme_medilearn/emailid';
-    $title = get_string('emailid', 'theme_medilearn');
-    $description = '';
-    $default = get_string('defaultemailid', 'theme_medilearn');
-    $setting = new admin_setting_configtext($name, $title, $description, $default);
-    $temp->add($setting);
-    /* Footer Block4 */
-
-    $ADMIN->add('theme_medilearn', $temp);
-    /*  Footer Settings end */

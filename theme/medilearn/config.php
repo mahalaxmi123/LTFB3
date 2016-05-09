@@ -64,8 +64,8 @@ $THEME->layouts = array(
         'file' => 'columns3.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('langmenu' => true),
-    ),
+     ),
+       
     'coursecategory' => array(
         'file' => 'columns3.php',
         'regions' => array('side-pre', 'side-post'),
@@ -96,7 +96,7 @@ $THEME->layouts = array(
         'file' => 'columns3.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('langmenu' => true),
+        
     ),
     // My public page.
     'mypublic' => array(

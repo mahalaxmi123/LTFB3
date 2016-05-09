@@ -179,10 +179,10 @@ padding: 8px 17px 8px;}
  /* footer end */
  
   /* login start */
-   #custom-login-page { padding: 50px 0; }
-   #custom-login-page .loginbox { width: 750px; margin: 50px auto; }
-   #custom-login-page .loginpanel { background-color: #8CC1C1; box-shadow: 1px 2px 4px 1px #928E8E; }
-   #custom-login-page .loginpanel h2 { color: #fff; box-shadow: none; border-bottom: 2px solid;}
+   #login-page { padding: 50px 0; }
+   #login-page .loginbox { width: 750px; margin: 50px auto; }
+   #login-page .loginpanel { background-color: #8CC1C1; box-shadow: 1px 2px 4px 1px #928E8E; }
+   #login-page .loginpanel h2 { color: #fff; box-shadow: none; border-bottom: 2px solid;}
    .loginbox .loginform  { margin-top: 2em; }  
    .loginbox .loginform .form-label { float: left; text-align: right; width: 32%; white-space: nowrap; }
    .loginbox .loginform .form-label label { font-size: 18px; color: #fff; }

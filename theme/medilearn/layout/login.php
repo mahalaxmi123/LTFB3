@@ -38,52 +38,53 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<div id="page-wrapper">
-    <div id="top-header">
-        <div class="container">
-            <div class="row-fluid">
-                <div class="span6"> 
-                    <?php require_once(dirname(__FILE__).'/includes/socialicons.php'); ?>
-                </div>
-                <div class="span6">
-                  <?php echo $OUTPUT->user_menu(); ?> 
-                </div>   
-            </div>
-        </div>
-    </div>
-    
-    <?php //echo $OUTPUT->full_header(); ?> 
-    
-<div id="custom-login-page" class="container"> 
-    <div id="page-content" class="row-fluid">
-        <section id="region-main" class="span12">
-            <?php
-            echo $OUTPUT->course_content_header();
-            echo $OUTPUT->main_content();
-            echo $OUTPUT->course_content_footer();
-            ?>
-        </section>
-    </div>
-    </div>
-
-      <footer id="page-footer">
-        <div class="footer-in">
-            <div class="container">
-                    <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
+        <div id="page-wrapper">    
+            <div id="top-header">
+                <div class="container">
                     <div class="row-fluid">
-                        <div class="copyright-box"><?php echo $html->footnote; ?></div>
-                        <?php echo $OUTPUT->standard_end_of_body_html() ?>
+                        <div class="span6"> 
+                            <?php require_once(dirname(__FILE__).'/includes/socialicons.php'); ?>
+                        </div>
+                        <div class="span6">
+                          <?php echo $OUTPUT->user_menu(); ?> 
+                        </div>   
                     </div>
+                </div>
             </div>
-        </div>
-  
 
-        <div id="footer"> 
-            <?php echo $OUTPUT->standard_footer_html(); ?>
-        </div>
-        
-    </footer>
-        
-</div>
-</body>
+
+            <?php //echo $OUTPUT->full_header(); ?> 
+
+            <div id="login-page" class="container"> 
+                <div id="page-content" class="row-fluid">
+                    <section id="region-main" class="span12">
+                        <?php
+                        echo $OUTPUT->course_content_header();
+                        echo $OUTPUT->main_content();
+                        echo $OUTPUT->course_content_footer();
+                        ?>
+                    </section>
+                </div>
+            </div>
+
+
+            <footer id="page-footer">
+                <div class="footer-in">
+                    <div class="container">
+                            <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
+                            <div class="row-fluid">
+                                <div class="copyright-box"><?php echo $html->footnote; ?></div>
+                                <?php echo $OUTPUT->standard_end_of_body_html() ?>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div id="footer"> 
+                    <?php echo $OUTPUT->standard_footer_html(); ?>
+                </div>
+
+            </footer>
+        </div>   
+    </body>
 </html>
