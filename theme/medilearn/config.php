@@ -166,5 +166,5 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 
 $THEME->javascripts = array( ); 
 $THEME->javascripts_footer = array(
-    'jquery.placeholder.1.3.min', 'custom'
+     'viewmore'
 );

@@ -1,4 +1,4 @@
-@media (max-width: 640px) {
+@media (max-width: 320px) {
 }
 @media (max-width: 480px) {
 }
@@ -11,6 +11,94 @@
 @media (max-width: 979px) {
     body { padding-top: 0; }
     .slider-text-wrap { top: 30%; }
+}
+
+@media (max-width: 1024px) {
+  
+.courses.frontpage-course-list-all > .row-fluid{
+    height : 596px;
+    overflow : hidden;
+}
+
+.courses.frontpage-course-list-all > .row-fluid.show-row-fluid{
+    height : auto;
+    overflow : visible;
+}
+
+	
+ //.coursebox .content .courseimage{width : 100%;}
+	
+        
+        //.coursebox .content p {clear:both;}
+ #frontpage-course-list .coursebox .summary-box { width: 100%; }
+#frontpage-course-list .coursebox .imagebox{ width: 100%; }
+.coursebox .content .courseimage {margin: 0px;}
+#frontpage-course-list .coursebox p { margin-right: 0px; }
+      .socialnetworks a { margin-left: 24px; }  
+      .span6 .usermenu { margin: 10px; }
+      .usermenu .moodle-actionmenu .toggle-display, .usermenu .login, .usermenu .login a { color: #fff; }
+      .usermenu .moodle-actionmenu .toggle-display { color: #fff; }
+      .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret { color: #fff; border-top-color: #fff; }
+      .jsenabled .moodle-actionmenu[data-enhance] .toggle-display.textmenu .caret:hover {color: #8cc1c1; border-top-color: #8cc1c1;}
+   
+                                                                                         
+                                                                                         
+ .container-fluid { padding-left: 10px ; padding-right: 10px;}
+ .slideimg { clear: both; }
+ //.navigation { margin-top: -50px; }
+ .navbar .brand { display:none;}
+ .navbar .btn-navbar { margin: 30px; }
+ .nav-collapse.collapse { margin-top: 4px;}
+ #page-login-index .span6 .usermenu {margin-right:20px;}
+ #page-login-index .span6 .usermenu .login { color:#fff;}
+ //#page { margin: 16% auto;}
+ #page-login-index #page { margin: 16% auto;}
+ #page {padding-left: 20px; padding-right: 20px; }
+ #page .loginbox {width: 100%;}
+ 
+}
+     
+ 
+@media only screen and (min-width:320px) and (max-width:767px) {
+ #page-login-index #page { margin: 16% auto;}
+ #page {padding-left: 20px; padding-right: 20px; }
+ .navbar .brand { display:none;}
+ .navbar .btn-navbar { margin: 30px; }
+ .nav-collapse.collapse { margin-top: 4px;}
+ #page-login-index .span6 .usermenu {margin-right:20px;}
+ #page-login-index .span6 .usermenu .login { color:#fff;}
+  #page .loginbox {width: 100%;}
+ 
+.carousel-inner > .item {
+    max-height: 280px;
+    min-height: 300px;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    padding:6px;
+    text-align: center;
+    line-height: 24px;
+    background: rgba(0,0,0,0.65);
+}
+#frontpage-course-list .coursebox .imagebox img { 
+    height: 200px;
+    width: 100%;
+    float: left; 
+}
+
+.courses.frontpage-course-list-all > .row-fluid{
+    height : 460px;
+    overflow : hidden;
+}
+
+.courses.frontpage-course-list-all > .row-fluid.show-row-fluid{
+    height : auto;
+    overflow : visible;
+}
+
+
 }
  /*courses  End 
 @media (max-width: 767px) {

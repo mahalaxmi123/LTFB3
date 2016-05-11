@@ -70,6 +70,16 @@ $ADMIN->add('themes', new admin_category('theme_medilearn', 'Medilearn'));
     $setting = new admin_setting_configtextarea($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
+    
+    $name = 'theme_medilearn/footnote';
+    $title = get_string('footnote', 'theme_medilearn');
+    $description = get_string('footnotedesc', 'theme_medilearn');
+    $default = '';
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting); 
+    
+    
 
 	$ADMIN->add('theme_medilearn', $temp);
     

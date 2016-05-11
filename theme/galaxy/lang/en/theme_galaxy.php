@@ -48,6 +48,9 @@ $string['region-side-pre'] = 'Left';
 $string['geneicsettings'] = 'General Settings';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
+$string['footnote'] = 'Footnote';
+$string['footnotedefault'] = '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and tronic typesetting, sheets taining Lorem Ipsum passages.</p>';
+$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
 $string['invert'] = 'Invert navbar';
 $string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
@@ -100,29 +103,6 @@ $string['pinterest'] = 'Pinterest URL';
 $string['pinterestdesc'] = 'Enter the URL of your Pinterest page. (i.e http://pinterest.com/mycollege/mypinboard)';
 
 
-//Contact Setting
-/*
-$string['contactsettings'] = 'Contact Settings';
-$string['contactsettingssub'] = 'These settings control the Contact Detail';
-$string['contactsettingsdesc'] = 'Enable and determine settings for each Contact detail below.';
-
-$string['contacttitle'] = 'Contact Detail heading';
-$string['contacttitledesc'] = 'This will be use as contact info';
-$string['contactindicatordesc'] = 'Set up this contact info';
-$string['contactnumberdesc'] = 'Specify numbers';
-$string['contacttitledes'] = '';
-$string['contactspotnumber'] = 'Number of contact info ';
-$string['contactspotnumberdesc'] = 'Number of Contact info options will not change until you hit save after changing this number.';
-
-$string['enablecontact'] = 'Enable this Contact info';
-$string['enablecontactdesc'] = 'Will you be using this contact info ?';
-
-
-$string['contactimage'] = 'Contact icon';
-$string['contactimagedesc'] = 'This will be use as icon fo the contact info';
-*/
-
-
 //Footer Setting
 $string['galaxy'] = 'Galaxy';
 $string['footersettings'] = 'Footer Setting';
@@ -156,9 +136,4 @@ $string['defaultphoneno'] = '(000) 123-456';
 
 $string['copyright_footer'] = 'Copyright';
 $string['copyright_default'] = 'Copyright &copy; 2016- All Right Reserved. ';
-
-
-$string['footerbtitle_desc'] = 'You can put your header eg:- Our Services';
-
-
 

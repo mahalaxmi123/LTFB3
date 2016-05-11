@@ -109,8 +109,8 @@ echo $OUTPUT->doctype() ?>
 <!-- End -->
 
     
-    <div id="main-contentbox">
-        <div class="container">
+    <div id="page" class="container">
+     
         <?php //echo $OUTPUT->full_header(); ?>
          
             <div id="page-content" class="row-fluid">
@@ -128,8 +128,7 @@ echo $OUTPUT->doctype() ?>
                 </div>
                 <?php echo $OUTPUT->blocks('side-post', $sidepost); ?>
             </div>
-       
-        </div> 
+ 
         </div>
 
     <footer id="page-footer">

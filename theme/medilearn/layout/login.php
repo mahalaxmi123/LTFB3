@@ -38,7 +38,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-        <div id="page-wrapper">    
+    <div id="page-wrapper">    
             <div id="top-header">
                 <div class="container">
                     <div class="row-fluid">
@@ -55,7 +55,7 @@ echo $OUTPUT->doctype() ?>
 
             <?php //echo $OUTPUT->full_header(); ?> 
 
-            <div id="login-page" class="container"> 
+            <div id="page" class="container"> 
                 <div id="page-content" class="row-fluid">
                     <section id="region-main" class="span12">
                         <?php
@@ -78,13 +78,7 @@ echo $OUTPUT->doctype() ?>
                             </div>
                     </div>
                 </div>
-
-
-                <div id="footer"> 
-                    <?php echo $OUTPUT->standard_footer_html(); ?>
-                </div>
-
             </footer>
-        </div>   
-    </body>
+    </div>   
+</body>
 </html>

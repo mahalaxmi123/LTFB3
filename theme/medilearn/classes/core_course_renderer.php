@@ -188,6 +188,9 @@ class theme_medilearn_core_course_renderer extends core_course_renderer {
         }
 
         $content .= html_writer::end_tag('div'); // .courses
+        $content .= html_writer::start_tag('button', array('id' => 'frontcourseView'));
+        $content .= "View More";
+        $content .= html_writer::end_tag('button');
         return $content;
     }
     
